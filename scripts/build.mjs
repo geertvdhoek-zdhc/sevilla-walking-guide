@@ -174,7 +174,7 @@ function buildRoute(nodeCoords,graph){
 }
 
 async function copyBase(){
-  await fs.rm(dist,{recursive:true,force:true});
+  // Keep assets downloaded by the workflow.
   await fs.mkdir(dataDir,{recursive:true});await fs.mkdir(audioDir,{recursive:true});await fs.mkdir(vendorDir,{recursive:true});
   for(const f of ['index.html','app.css','app.js','manifest.webmanifest','icon.svg']) await fs.copyFile(path.join(src,f),path.join(dist,f));
   await fs.copyFile(path.join(root,'node_modules/leaflet/dist/leaflet.js'),path.join(vendorDir,'leaflet.js'));
@@ -192,12 +192,15 @@ async function writeServiceWorker(){
 
 await copyBase();
 await fs.writeFile(path.join(dataDir,'stops.json'),JSON.stringify(stops));
-await downloadAudio();
+if (!(await fs.readdir(audioDir)).includes('01-alameda.mp3')) await downloadAudio();
+const hasMap = (await fs.readdir(dataDir)).includes('map.geojson');
+if (!hasMap) {
 const osm=await fetchOverpass();
 const converted=convertOsm(osm);
 console.log(`OSM features: ${converted.map.features.length}; walk graph nodes: ${converted.graph.size}`);
 await fs.writeFile(path.join(dataDir,'map.geojson'),JSON.stringify(converted.map));
 const route=buildRoute(converted.nodeCoords,converted.graph);
 await fs.writeFile(path.join(dataDir,'route.geojson'),JSON.stringify(route));
+}
 await writeServiceWorker();
 const files=await walk(dist);console.log(`Build complete: ${files.length} files.`);

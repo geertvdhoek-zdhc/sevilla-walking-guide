@@ -2,13 +2,13 @@
   "name": "Sevilla Wandelgids",
   "short_name": "Sevilla",
   "description": "Offline wandelroute door Alameda, Feria, San Luis en Macarena met Nederlandse audiogids.",
-  "start_url": "/",
-  "scope": "/",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#f4efe7",
   "theme_color": "#342e2a",
   "orientation": "portrait-primary",
   "icons": [
-    {"src":"/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+    {"src":"./icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
   ]
 }

@@ -1,0 +1,12 @@
+{
+  "name": "sevilla-walking-guide",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  },
+  "dependencies": {
+    "leaflet": "1.9.4"
+  }
+}

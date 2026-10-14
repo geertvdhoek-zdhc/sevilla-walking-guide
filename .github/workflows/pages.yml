@@ -26,6 +26,19 @@ jobs:
           node-version: 22
       - name: Install
         run: npm install
+      - name: Reuse published offline assets
+        run: |
+          set -e
+          mkdir -p dist/data dist/audio
+          base="https://geertvdhoek-zdhc.github.io/sevilla-walking-guide"
+          for f in map.geojson route.geojson; do
+            curl --fail --location --retry 3 "$base/data/$f" -o "dist/data/$f"
+            test -s "dist/data/$f"
+          done
+          for f in 01-alameda 02-feria 03-san-luis 04-pumarejo 05-macarena 06-muralla 07-derivado; do
+            curl --fail --location --retry 3 "$base/audio/$f.mp3" -o "dist/audio/$f.mp3"
+            test -s "dist/audio/$f.mp3"
+          done
       - name: Build offline guide
         run: npm run build
       - name: Validate required assets

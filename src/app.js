@@ -62,7 +62,7 @@ const roadLayer = L.geoJSON(null, {
 
 const routeMain = L.geoJSON(null, {style:{color:'#d96b32',weight:6,opacity:.95,lineCap:'round',lineJoin:'round'}}).addTo(map);
 const routeOptional = L.geoJSON(null, {style:{color:'#7d6788',weight:5,opacity:.78,dashArray:'8 8',lineCap:'round'}}).addTo(map);
-const activeRoute = L.polyline([], {color:'#2463eb',weight:7,opacity:.94,lineCap:'round',lineJoin:'round'}).addTo(map);
+const activeRoute = L.polyline([], {color:'#2463eb',weight:7,opacity:.94,lineCap:'round',lineJoin:'round'});
 
 function haversine(a,b){
   const R=6371000, rad=Math.PI/180;
@@ -164,7 +164,7 @@ function calculateWalkingRoute(fit){
   if(!userLatLng){navigationStatus.textContent='Zet GPS aan om een wandelroute te berekenen.';return;}
   const destination=stops[navigationTarget],start=nearestWalkNode(userLatLng),end=nearestWalkNode(destination);
   if(!start.id||!end.id||start.distance>150||end.distance>150){
-    activeRoute.setLatLngs([]);
+    map.removeLayer(activeRoute);activeRoute.setLatLngs([]);
     navigationStatus.textContent='Geen wandelroute beschikbaar vanaf deze positie binnen het offline kaartgebied.';
     return;
   }
@@ -180,7 +180,7 @@ function calculateWalkingRoute(fit){
     }
   }
   if(!distances.has(end.id)){
-    activeRoute.setLatLngs([]);
+    map.removeLayer(activeRoute);activeRoute.setLatLngs([]);
     navigationStatus.textContent='Geen verbonden wandelpad gevonden; kies een andere halte.';
     return;
   }
@@ -189,6 +189,7 @@ function calculateWalkingRoute(fit){
   points.reverse();
   const route=[userLatLng,...points,{lat:destination.lat,lng:destination.lng}];
   activeRoute.setLatLngs(route);
+  if(!map.hasLayer(activeRoute)) activeRoute.addTo(map);
   const meters=distances.get(end.id)+start.distance+end.distance;
   navigationStatus.textContent='Wandelroute: '+fmtDistance(meters)+' · circa '+Math.round(meters/80)+' min te voet';
   lastRouteOrigin={...userLatLng};
@@ -196,7 +197,7 @@ function calculateWalkingRoute(fit){
 }
 navigateButton.addEventListener('click',()=>{
   if(navigationTarget===selected){
-    navigationTarget=null;activeRoute.setLatLngs([]);lastRouteOrigin=null;
+    navigationTarget=null;map.removeLayer(activeRoute);activeRoute.setLatLngs([]);lastRouteOrigin=null;
     navigationStatus.textContent='';navigateButton.textContent='Route hierheen';navigateButton.classList.remove('active');return;
   }
   navigationTarget=selected;

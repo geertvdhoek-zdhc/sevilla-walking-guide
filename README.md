@@ -33,3 +33,6 @@ The initial bootstrap build downloads the already-generated ElevenLabs MP3 files
 5. The cached guide can then be used without mobile data.
 
 Map data: © OpenStreetMap contributors, ODbL.
+
+
+Deployment target: GitHub Pages over HTTPS.

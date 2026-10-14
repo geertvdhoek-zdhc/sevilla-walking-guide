@@ -90,7 +90,7 @@ async function downloadAudio(){
 
 async function fetchOverpass(){
   const b=`${bbox.south},${bbox.west},${bbox.north},${bbox.east}`;
-  const q=`[out:json][timeout:45];(way[\"highway\"](${b});way[\"building\"](${b});way[\"leisure\"~\"park|garden|recreation_ground|pitch\"](${b});way[\"landuse\"~\"grass|recreation_ground|cemetery\"](${b});way[\"natural\"~\"water|wood|scrub\"](${b});way[\"waterway\"](${b}););out body geom;`;
+  const q=`[out:json][timeout:25];(way[\"highway\"](${b});way[\"leisure\"~\"park|garden\"](${b});way[\"natural\"=\"water\"](${b});way[\"waterway\"](${b}););out body geom;`;
   const endpoints=['https://overpass-api.de/api/interpreter','https://overpass.kumi.systems/api/interpreter'];
   let last;
   for(const endpoint of endpoints){

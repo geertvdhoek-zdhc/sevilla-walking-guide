@@ -49,7 +49,7 @@ const roadLayer = L.geoJSON(null, {
   onEachFeature: (feature, layer) => {
     const p = feature.properties || {};
     if (p.kind === 'road' && p.name && ['primary','secondary','tertiary','pedestrian'].includes(p.highway)) {
-      layer.bindTooltip(p.name, {permanent:true,direction:'center',className:'street-label',opacity:.78});
+      layer.bindTooltip(p.name, {permanent:false,sticky:true,direction:'top',className:'street-label',opacity:.78});
     }
   }
 }).addTo(map);

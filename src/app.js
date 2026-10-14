@@ -108,7 +108,7 @@ function updateDistance(){
 
 async function init(){
   const [stopRes,mapRes,routeRes]=await Promise.all([
-    fetch('/data/stops.json'),fetch('/data/map.geojson'),fetch('/data/route.geojson')
+    fetch('./data/stops.json'),fetch('./data/map.geojson'),fetch('./data/route.geojson')
   ]);
   if(!stopRes.ok||!mapRes.ok||!routeRes.ok) throw new Error('Lokale gidsdata kon niet worden geladen.');
   stops=await stopRes.json();
@@ -172,7 +172,7 @@ map.on('dragstart',()=>{followMode=false;});
 if('serviceWorker' in navigator){
   window.addEventListener('load',async()=>{
     try{
-      await navigator.serviceWorker.register('/sw.js');
+      await navigator.serviceWorker.register('./sw.js');
       await navigator.serviceWorker.ready;
       offlineBadge.textContent='Offline gereed'; offlineBadge.className='status ready';
     }catch(e){ offlineBadge.textContent='Offline cache fout'; offlineBadge.className='status error'; }

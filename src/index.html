@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#342e2a">
   <meta name="description" content="Offline Sevilla wandelgids met kaart, GPS en Nederlandse audio.">
-  <link rel="manifest" href="/manifest.webmanifest">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/vendor/leaflet.css">
-  <link rel="stylesheet" href="/app.css">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./vendor/leaflet.css">
+  <link rel="stylesheet" href="./app.css">
   <title>Sevilla Wandelgids</title>
 </head>
 <body>
@@ -23,19 +23,16 @@
 
     <main>
       <section id="map" aria-label="Kaart met wandelroute"></section>
-
       <div class="map-actions">
         <button id="gpsButton" class="fab primary" aria-label="GPS aanzetten">◎</button>
         <button id="recenterButton" class="fab" aria-label="Centreer op locatie" hidden>⌖</button>
       </div>
-
       <section id="onboarding" class="onboarding card">
         <button id="closeOnboarding" class="close" aria-label="Sluiten">×</button>
         <h2>Voor onderweg</h2>
         <p>Deze gids bewaart kaart, route en audio lokaal. Zet GPS aan voor je positie. Zodra bovenaan <b>Offline gereed</b> staat, werkt alles ook zonder mobiele data.</p>
         <div class="privacy">Je locatie blijft op deze telefoon en wordt nergens heen gestuurd.</div>
       </section>
-
       <section id="sheet" class="sheet">
         <div class="handle"></div>
         <div class="sheet-head">
@@ -65,8 +62,7 @@
       </section>
     </main>
   </div>
-
-  <script src="/vendor/leaflet.js"></script>
-  <script type="module" src="/app.js"></script>
+  <script src="./vendor/leaflet.js"></script>
+  <script type="module" src="./app.js"></script>
 </body>
 </html>

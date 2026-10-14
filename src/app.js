@@ -18,6 +18,8 @@ const transcript = $('#transcript');
 const visitedButton = $('#visitedButton');
 const prevButton = $('#prevButton');
 const nextButton = $('#nextButton');
+const navigateButton = $('#navigateButton');
+const navigationStatus = $('#navigationStatus');
 
 let stops = [];
 let selected = Number(localStorage.getItem('selectedStop') || 0);
@@ -28,6 +30,10 @@ let userMarker = null;
 let accuracyCircle = null;
 let watchId = null;
 let followMode = true;
+let walkingGraph = new Map();
+let walkingNodes = new Map();
+let navigationTarget = null;
+let lastRouteOrigin = null;
 
 const map = L.map(mapEl, { zoomControl: false, attributionControl: true, minZoom: 14, maxZoom: 19 });
 L.control.zoom({ position: 'bottomleft' }).addTo(map);
@@ -56,6 +62,7 @@ const roadLayer = L.geoJSON(null, {
 
 const routeMain = L.geoJSON(null, {style:{color:'#d96b32',weight:6,opacity:.95,lineCap:'round',lineJoin:'round'}}).addTo(map);
 const routeOptional = L.geoJSON(null, {style:{color:'#7d6788',weight:5,opacity:.78,dashArray:'8 8',lineCap:'round'}}).addTo(map);
+const activeRoute = L.polyline([], {color:'#2463eb',weight:7,opacity:.94,lineCap:'round',lineJoin:'round'}).addTo(map);
 
 function haversine(a,b){
   const R=6371000, rad=Math.PI/180;
@@ -93,6 +100,8 @@ function selectStop(i, pan=true){
   nextButton.disabled=selected===stops.length-1;
   if(pan) map.panTo([s.lat,s.lng],{animate:true});
   refreshMarkers();
+  if(navigationTarget!==null) { navigationTarget=selected; calculateWalkingRoute(true); }
+  navigateButton.textContent = navigationTarget===selected ? 'Navigatie stoppen' : 'Route hierheen';
   updateDistance();
 }
 function updateDistance(){
@@ -114,6 +123,7 @@ async function init(){
   stops=await stopRes.json();
   const mapData=await mapRes.json(), routeData=await routeRes.json();
   roadLayer.addData(mapData);
+  createWalkingGraph(mapData);
   routeMain.addData({type:'FeatureCollection',features:routeData.features.filter(f=>f.properties.segment==='main')});
   routeOptional.addData({type:'FeatureCollection',features:routeData.features.filter(f=>f.properties.segment==='optional')});
   stops.forEach((s,i)=>{
@@ -125,6 +135,76 @@ async function init(){
   if(bounds.isValid()) map.fitBounds(bounds.pad(.20),{paddingTopLeft:[20,90],paddingBottomRight:[20,250]});
   selectStop(selected,false);
 }
+
+
+function createWalkingGraph(data){
+  const key=p=>p[0].toFixed(7)+','+p[1].toFixed(7);
+  const excluded=new Set(['motorway','motorway_link','trunk','trunk_link','construction','proposed','raceway']);
+  for(const f of data.features||[]){
+    if(f.properties?.kind!=='road' || !f.properties.highway || excluded.has(f.properties.highway) || f.geometry?.type!=='LineString') continue;
+    const coords=f.geometry.coordinates;
+    for(let i=1;i<coords.length;i++){
+      const a=key(coords[i-1]),b=key(coords[i]);
+      const ca={lat:coords[i-1][1],lng:coords[i-1][0]},cb={lat:coords[i][1],lng:coords[i][0]};
+      walkingNodes.set(a,ca);walkingNodes.set(b,cb);
+      if(!walkingGraph.has(a))walkingGraph.set(a,[]);
+      if(!walkingGraph.has(b))walkingGraph.set(b,[]);
+      const d=haversine(ca,cb);
+      walkingGraph.get(a).push([b,d]);walkingGraph.get(b).push([a,d]);
+    }
+  }
+}
+function nearestWalkNode(point){
+  let id=null,distance=Infinity;
+  for(const [key,pos] of walkingNodes){const d=haversine(point,pos);if(d<distance){id=key;distance=d;}}
+  return {id,distance};
+}
+function calculateWalkingRoute(fit){
+  if(navigationTarget===null||!stops[navigationTarget])return;
+  if(!userLatLng){navigationStatus.textContent='Zet GPS aan om een wandelroute te berekenen.';return;}
+  const destination=stops[navigationTarget],start=nearestWalkNode(userLatLng),end=nearestWalkNode(destination);
+  if(!start.id||!end.id||start.distance>150||end.distance>150){
+    activeRoute.setLatLngs([]);
+    navigationStatus.textContent='Geen wandelroute beschikbaar vanaf deze positie binnen het offline kaartgebied.';
+    return;
+  }
+  const distances=new Map([[start.id,0]]),previous=new Map(),queue=[[0,start.id]];
+  while(queue.length){
+    let best=0;for(let i=1;i<queue.length;i++)if(queue[i][0]<queue[best][0])best=i;
+    const [distance,node]=queue.splice(best,1)[0];
+    if(distance!==distances.get(node))continue;
+    if(node===end.id)break;
+    for(const [next,weight] of walkingGraph.get(node)||[]){
+      const value=distance+weight;
+      if(value<(distances.get(next)??Infinity)){distances.set(next,value);previous.set(next,node);queue.push([value,next]);}
+    }
+  }
+  if(!distances.has(end.id)){
+    activeRoute.setLatLngs([]);
+    navigationStatus.textContent='Geen verbonden wandelpad gevonden; kies een andere halte.';
+    return;
+  }
+  const points=[];let current=end.id;
+  while(current){points.push(walkingNodes.get(current));if(current===start.id)break;current=previous.get(current);}
+  points.reverse();
+  const route=[userLatLng,...points,{lat:destination.lat,lng:destination.lng}];
+  activeRoute.setLatLngs(route);
+  const meters=distances.get(end.id)+start.distance+end.distance;
+  navigationStatus.textContent='Wandelroute: '+fmtDistance(meters)+' · circa '+Math.round(meters/80)+' min te voet';
+  lastRouteOrigin={...userLatLng};
+  if(fit)map.fitBounds(activeRoute.getBounds().pad(.12),{paddingTopLeft:[24,85],paddingBottomRight:[24,260],maxZoom:17});
+}
+navigateButton.addEventListener('click',()=>{
+  if(navigationTarget===selected){
+    navigationTarget=null;activeRoute.setLatLngs([]);lastRouteOrigin=null;
+    navigationStatus.textContent='';navigateButton.textContent='Route hierheen';navigateButton.classList.remove('active');return;
+  }
+  navigationTarget=selected;
+  navigateButton.textContent='Navigatie stoppen';
+  navigateButton.classList.add('active');
+  calculateWalkingRoute(true);
+  if(watchId===null) gpsButton.click();
+});
 
 visitedButton.addEventListener('click',()=>{
   if(visited.has(selected)) visited.delete(selected); else visited.add(selected);
@@ -154,6 +234,7 @@ function locationSuccess(pos){
   recenterButton.hidden=false;
   if(followMode) map.panTo([lat,lng]);
   updateDistance();
+  if(navigationTarget!==null && (!lastRouteOrigin || haversine(lastRouteOrigin,userLatLng)>25)) calculateWalkingRoute(false);
 }
 function locationError(err){
   gpsButton.textContent='!';

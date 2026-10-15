@@ -49,6 +49,7 @@ jobs:
           test -s dist/data/stops.json
           for f in dist/audio/*.mp3; do test -s "$f"; done
           test "$(find dist/audio -name '*.mp3' | wc -l)" -eq 7
+          test -s dist/cities/cordoba/audio/01.mp3
       - name: Configure Pages
         uses: actions/configure-pages@v5
         with:

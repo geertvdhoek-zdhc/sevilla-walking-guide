@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -39,10 +39,20 @@ jobs:
             curl --fail --location --retry 3 "$base/audio/$f.mp3" -o "dist/audio/$f.mp3"
             test -s "dist/audio/$f.mp3"
           done
-      - name: Reuse Córdoba audio if already published
+      - name: Save ElevenLabs audio as permanent MP3
         run: |
-          mkdir -p dist/cities/cordoba/audio
-          curl --fail --silent --show-error --location "https://geertvdhoek-zdhc.github.io/sevilla-walking-guide/cities/cordoba/audio/01.mp3" -o dist/cities/cordoba/audio/01.mp3 || rm -f dist/cities/cordoba/audio/01.mp3
+          set -e
+          mkdir -p src/cities/cordoba/audio
+          if [ ! -s src/cities/cordoba/audio/01.mp3 ]; then
+            node -e "const fs=require('fs');const https=require('https');const u=JSON.parse(fs.readFileSync('src/cities/cordoba/audio-source-01.json','utf8')).url;if(!u.startsWith('https://'))process.exit(1);fs.writeFileSync('/tmp/cordoba-url',u)"
+            curl --fail --location --retry 2 --max-time 90 "$(cat /tmp/cordoba-url)" -o src/cities/cordoba/audio/01.mp3
+            test "$(wc -c < src/cities/cordoba/audio/01.mp3)" -gt 10000
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add src/cities/cordoba/audio/01.mp3
+            git commit -m "Save Córdoba 01 ElevenLabs MP3 permanently"
+            git push origin HEAD:main
+          fi
       - name: Build offline guide
         run: npm run build
       - name: Validate required assets

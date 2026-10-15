@@ -39,6 +39,10 @@ jobs:
             curl --fail --location --retry 3 "$base/audio/$f.mp3" -o "dist/audio/$f.mp3"
             test -s "dist/audio/$f.mp3"
           done
+      - name: Reuse Córdoba audio if already published
+        run: |
+          mkdir -p dist/cities/cordoba/audio
+          curl --fail --silent --show-error --location "https://geertvdhoek-zdhc.github.io/sevilla-walking-guide/cities/cordoba/audio/01.mp3" -o dist/cities/cordoba/audio/01.mp3 || rm -f dist/cities/cordoba/audio/01.mp3
       - name: Build offline guide
         run: npm run build
       - name: Validate required assets

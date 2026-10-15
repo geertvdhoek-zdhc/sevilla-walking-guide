@@ -186,12 +186,26 @@ async function walk(dir,prefix=''){
 }
 async function writeServiceWorker(){
   const assets=(await walk(dist)).filter(x=>x!=='/sw.js').sort();
-  const sw=`const CACHE='sevilla-guide-v9';\nconst ASSETS=${JSON.stringify(assets)};\nself.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(async c=>{for(const u of ASSETS){const r=await fetch(u,{cache:'reload'});if(!r.ok)throw new Error('cache '+u);await c.put(u,r);}}).then(()=>self.skipWaiting())));\nself.addEventListener('activate',e=>e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==CACHE).map(x=>caches.delete(x)))).then(()=>self.clients.claim())));\nself.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;const url=new URL(e.request.url);if(url.origin!==location.origin)return;const range=e.request.headers.get('range');if(range&&url.pathname.endsWith('.mp3')){e.respondWith((async()=>{const c=await caches.open(CACHE);const full=await c.match(url.href,{ignoreVary:true});if(!full)return fetch(e.request);const b=await full.arrayBuffer();const m=/bytes=(\\d+)-(\\d*)/.exec(range);if(!m)return full;const start=Number(m[1]),end=m[2]?Number(m[2]):b.byteLength-1;const chunk=b.slice(start,end+1);return new Response(chunk,{status:206,headers:{'Content-Type':'audio/mpeg','Content-Length':String(chunk.byteLength),'Content-Range':'bytes '+start+'-'+end+'/'+b.byteLength,'Accept-Ranges':'bytes'}});})());return;}e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request)));});`;
+  const sw=`const CACHE='sevilla-guide-v10';\nconst ASSETS=${JSON.stringify(assets)};\nself.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(async c=>{for(const u of ASSETS){const r=await fetch(u,{cache:'reload'});if(!r.ok)throw new Error('cache '+u);await c.put(u,r);}}).then(()=>self.skipWaiting())));\nself.addEventListener('activate',e=>e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==CACHE).map(x=>caches.delete(x)))).then(()=>self.clients.claim())));\nself.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;const url=new URL(e.request.url);if(url.origin!==location.origin)return;const range=e.request.headers.get('range');if(range&&url.pathname.endsWith('.mp3')){e.respondWith((async()=>{const c=await caches.open(CACHE);const full=await c.match(url.href,{ignoreVary:true});if(!full)return fetch(e.request);const b=await full.arrayBuffer();const m=/bytes=(\\d+)-(\\d*)/.exec(range);if(!m)return full;const start=Number(m[1]),end=m[2]?Number(m[2]):b.byteLength-1;const chunk=b.slice(start,end+1);return new Response(chunk,{status:206,headers:{'Content-Type':'audio/mpeg','Content-Length':String(chunk.byteLength),'Content-Range':'bytes '+start+'-'+end+'/'+b.byteLength,'Accept-Ranges':'bytes'}});})());return;}e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request)));});`;
   await fs.writeFile(path.join(dist,'sw.js'),sw);
   console.log(`Service worker precaches ${assets.length} assets.`);
 }
 
 await copyBase();
+const cordobaAudioDir=path.join(dist,'cities','cordoba','audio');
+await fs.mkdir(cordobaAudioDir,{recursive:true});
+const cordobaSourcePath=path.join(src,'cities','cordoba','audio-source-01.json');
+try {
+  const source=JSON.parse(await fs.readFile(cordobaSourcePath,'utf8'));
+  const response=await fetchWithRetry(source.url,{},2);
+  const bytes=Buffer.from(await response.arrayBuffer());
+  if(bytes.length<10000 || !['ID3',''].includes(bytes.subarray(0,3).toString('utf8')) && bytes.subarray(0,3).toString('utf8').startsWith('<')) throw Error('Invalid Córdoba MP3');
+  await fs.writeFile(path.join(cordobaAudioDir,'01.mp3'),bytes);
+  console.log('Córdoba stop 01: '+bytes.length+' bytes');
+} catch(err) {
+  throw new Error('Córdoba ElevenLabs audio failed: '+err.message);
+}
+
 await fs.writeFile(path.join(dataDir,'stops.json'),JSON.stringify(stops));
 if (!(await fs.readdir(audioDir)).includes('01-alameda.mp3')) await downloadAudio();
 const hasMap = (await fs.readdir(dataDir)).includes('map.geojson');

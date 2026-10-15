@@ -217,5 +217,16 @@ await fs.writeFile(path.join(dataDir,'map.geojson'),JSON.stringify(converted.map
 const route=buildRoute(converted.nodeCoords,converted.graph);
 await fs.writeFile(path.join(dataDir,'route.geojson'),JSON.stringify(route));
 }
+// Córdoba: preserve published audio; seed first clip from ElevenLabs only if needed.
+const cordobaAudioDir=path.join(dist,'cities','cordoba','audio');
+await fs.mkdir(cordobaAudioDir,{recursive:true});
+const firstClip=path.join(cordobaAudioDir,'01.mp3');
+try{await fs.access(firstClip);}catch{
+  const source=JSON.parse(await fs.readFile(path.join(src,'cities','cordoba','audio-source-01.json'),'utf8'));
+  const response=await fetchWithRetry(source.url,{},2);
+  const bytes=Buffer.from(await response.arrayBuffer());
+  if(bytes.length<10000)throw new Error('Cordoba 01.mp3 is not valid audio');
+  await fs.writeFile(firstClip,bytes);
+}
 await writeServiceWorker();
 const files=await walk(dist);console.log(`Build complete: ${files.length} files.`);

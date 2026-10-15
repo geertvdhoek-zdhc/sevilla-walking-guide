@@ -204,6 +204,6 @@ const route=buildRoute(converted.nodeCoords,converted.graph);
 await fs.writeFile(path.join(dataDir,'route.geojson'),JSON.stringify(route));
 }
 // The GitHub Actions workflow writes the MP3 once to src before building.
-await fs.access(path.join(dist,'cities','cordoba','audio','01.mp3'));
+// Córdoba audio is copied from src/cities/cordoba/audio if present.
 await writeServiceWorker();
 const files=await walk(dist);console.log(`Build complete: ${files.length} files.`);

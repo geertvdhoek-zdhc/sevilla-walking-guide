@@ -28,19 +28,19 @@ window.GRANADA_ROUTES = [
       },
       {
         "name": "Catedral van Granada",
-        "lat": 37.17646,
-        "lng": -3.59917,
+        "lat": 37.17618,
+        "lng": -3.59959,
         "kicker": "Een renaissance in een veroverde stad",
         "story": "De kathedraal is een krachtig statement. Na de verovering van Granada in 1492 wilden de katholieke vorsten niet alleen regeren, maar ook het religieuze en stedelijke landschap veranderen. Een grote kerk op deze locatie liet iedereen zien dat Granada een nieuwe fase was ingegaan.\n\nDe bouw begon in de zestiende eeuw. Aanvankelijk werd gedacht aan een gotische kerk, maar Diego de Siloé gaf het ontwerp een nadrukkelijk renaissancekarakter. Binnen zijn hoogte, ritme en licht bedoeld om een monumentale orde te scheppen. Buiten zie je hoe de gevel bijna op het drukke stratenweefsel wordt gedrukt: de kerk is enorm, maar de stad eromheen blijft compact.\n\nEen kerk bouwen duurt generaties. Dat maakt het gebouw niet tot het product van één koning of architect, maar van een lange geschiedenis van keuzes, geld en veranderende smaak.",
-        "tip": "De buitenkant is gratis te bekijken; voor het interieur is doorgaans een apart toegangsbewijs nodig."
+        "tip": "Ga naar de westelijke hoofdgevel aan Plaza de las Pasiegas. De pin ligt bij de openbare toegang, niet midden in de kathedraal. Voor het interieur heb je doorgaans een afzonderlijk ticket nodig."
       },
       {
         "name": "Capilla Real",
         "lat": 37.17604,
-        "lng": -3.5987,
+        "lng": -3.5988,
         "kicker": "Waar de overwinnaars begraven wilden worden",
         "story": "In deze koninklijke kapel liggen Isabella van Castilië en Ferdinand van Aragón begraven, de vorsten onder wie Granada in 1492 werd veroverd. Zij kozen niet toevallig deze stad als hun laatste rustplaats. Door hier een dynastiek graf te bouwen werd een politieke overwinning omgezet in een boodschap voor de eeuwen erna.\n\nDiezelfde periode is ook een breuk in het leven van veel inwoners. Eerst kregen moslims verdragsgaranties, maar later kwamen steeds strengere maatregelen, gedwongen bekeringen en vervolging. Het verhaal van de ‘herovering’ ziet er dus heel anders uit afhankelijk van wie het vertelt.\n\nDe kapel is geen eenvoudig monument van triomf. Zij herinnert je aan de manier waarop koningen controle probeerden te krijgen over het verleden en de toekomst. Kijk vervolgens weer naar de omliggende straten: daar moest het gewone stadsleven intussen doorgaan.",
-        "tip": "De kapel en de kathedraal zijn afzonderlijke bezoeken; je hoeft niet naar binnen om de geschiedenis van deze halte te volgen."
+        "tip": "De bezoekingang ligt aan Calle Oficios via de oude Lonja de Mercaderes. De kapel en de kathedraal zijn afzonderlijke bezoeken; je kunt de buitenkant ook zonder ticket bekijken."
       },
       {
         "name": "Palacio de la Madraza",
@@ -68,11 +68,11 @@ window.GRANADA_ROUTES = [
       },
       {
         "name": "Iglesia de Santa Ana",
-        "lat": 37.17748,
-        "lng": -3.59451,
+        "lat": 37.17737,
+        "lng": -3.59463,
         "kicker": "Een kerktoren met een tweede geschiedenis",
         "story": "De kerk van Santa Ana staat aan het begin van de route langs de Darro. Haar toren en het gebruik van baksteen en decoratieve details verwijzen naar de mudéjarstijl: christelijke gebouwen waarin ambachtslieden vormen en technieken toepasten die uit de islamitische bouwtraditie voortkwamen.\n\nOp deze plek stond eerder een moskee. Dat betekent niet dat het nieuwe gebouw simpelweg hetzelfde bleef, maar wel dat de stedelijke ruimte en de vaardigheden van bouwers niet van de ene op de andere dag verdwenen. Een politieke verandering kan snel gaan; de kennis van materiaal, water en metselwerk blijft veel langer leven.\n\nKijk van de kerk naar de rivier en de steile hellingen. In deze stad is bouwen altijd onderhandelen geweest met de topografie. Zelfs een klein plein blijkt een kruispunt van religie, techniek en dagelijks verkeer.",
-        "tip": "Vanaf de kerk begint de bijzonder fraaie Carrera del Darro, de eerste halte van de volgende wandeling."
+        "tip": "Vanaf de kerk aan Plaza de Santa Ana begint de Carrera del Darro, onderdeel van de wandeling door Albaicín."
       }
     ]
   },

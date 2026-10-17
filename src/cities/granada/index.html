@@ -50,18 +50,18 @@ h1{font:700 25px/1.15 Georgia,serif;margin:0 0 11px}
 @media(max-width:450px){.brand strong{font-size:15px}header{gap:7px;padding:9px}header select{font-size:12px;min-width:123px}header a{font-size:11px}#sheet{height:66dvh}}
 </style></head>
 <body>
-<header><a href="../../" aria-label="Terug naar de stadsgids">← Steden</a><div class="brand"><small>Wandelgids</small><strong>Granada</strong></div><select id="route" aria-label="Kies wandeling"><option value="centrum">Za 17 · Centrum</option><option value="alhambra">Zo 18 · Alhambra</option><option value="albaicin">Ma 19 · Albaicín</option></select></header>
+<header><a href="../../" aria-label="Terug naar de stadsgids">← Steden</a><a href="./intro.html" aria-label="Lees de introductie over Granada">Over Granada</a><div class="brand"><small>Wandelgids</small><strong>Granada</strong></div><select id="route" aria-label="Kies wandeling"><option value="centrum">Za 17 · Centrum</option><option value="alhambra">Zo 18 · Alhambra</option><option value="albaicin">Ma 19 · Albaicín</option></select></header>
 <div id="map" role="application" aria-label="Interactieve kaart van Granada met genummerde haltes"></div>
-<div class="map-ui"><button id="locate" type="button">◎ Mijn locatie</button><button id="fit" type="button">⤢ Hele wandeling</button><div id="locStatus" role="status"></div></div>
+<div class="map-ui"><a id="fullRoute" href="#" target="_blank" rel="noopener noreferrer" style="background:#315f64;color:white;text-decoration:none;border-radius:10px;padding:10px 12px;font-size:13px;font-weight:750;box-shadow:0 2px 9px #0002">↗ Wandel hele route</a><div id="walkStatus" role="status" style="background:#fff9ec;color:#574536;padding:5px 8px;border-radius:7px;font-size:11px;max-width:220px"></div><button id="locate" type="button">◎ Mijn locatie</button><button id="fit" type="button">⤢ Hele wandeling</button><div id="locStatus" role="status"></div></div>
 <section id="sheet" aria-label="Verhalen en haltes">
 <button class="grab" id="collapse" type="button" aria-expanded="true"><span class="bar"></span><span class="titles"><small id="routeLabel">Granada</small><strong id="peekName">Wandeling laden…</strong></span><span class="chevron" id="chevron">⌄</span></button>
 <div id="content"><div class="route-info"><strong id="routeMeta"></strong><p id="routeIntro"></p></div>
 <div id="stopCount"></div><h1 id="stopName"></h1><div id="kicker"></div><p id="story"></p><div id="tip"></div>
 <div class="actions"><button id="prev" class="secondary" type="button">← Vorige</button><button id="next" type="button">Volgende →</button><button id="visited" class="secondary" type="button">✓ Bezocht</button><a id="directions" rel="noopener noreferrer" target="_blank">↗ Wandelroute</a></div>
 <details id="listDetails"><summary>Alle haltes in deze wandeling</summary><div id="stopList"></div></details>
-<div class="footnote">Genummerde stippen zijn haltes; de gestippelde lijn toont de volgorde, niet de exacte voetgangersroute. Met ‘Wandelroute’ open je een route in Google Maps. GPS blijft op je toestel. De kaarttegels vereisen internet. Deze gids bevat geen audio, alleen Nederlandse teksten.</div>
+<div class="footnote">Genummerde stippen zijn haltes; de blauwe lijn toont een voetgangersroute wanneer die beschikbaar is; anders worden uitsluitend de haltes getoond. Met ‘Wandelroute’ open je een route in Google Maps. GPS blijft op je toestel. De kaarttegels vereisen internet. Deze gids bevat geen audio, alleen Nederlandse teksten.</div>
 </div></section>
 <script src="../../vendor/leaflet.js"></script>
-<script src="./stops.js?v=granada-6"></script>
-<script src="./app.js?v=granada-6"></script>
+<script src="./stops.js?v=granada-7"></script>
+<script src="./app.js?v=granada-7"></script>
 </body></html>

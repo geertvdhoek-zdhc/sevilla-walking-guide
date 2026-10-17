@@ -1,129 +1,114 @@
-(() => {
+(()=>{
 'use strict';
-const $ = id => document.getElementById(id);
-const DAYS = {
-'17': {label:'Zaterdag 17 oktober · Historisch centrum',intro:'Een compacte kennismaking met de oude binnenstad: van handelsstraten en markten naar de koninklijke monumenten. Reken op ongeveer 2–3 uur inclusief verhalen en pauzes.'},
-'18': {label:'Zondag 18 oktober · Alhambra en Realejo',intro:'De helling op via de oude poorten, langs de vesting en de paleizen, daarna terug door Realejo. Steil en met veel hoogteverschil. Voor de Nasridische paleizen, Alcazaba en Generalife gelden afzonderlijke ticketvoorwaarden; plan rond je geboekte toegangstijd.'},
-'19': {label:'Maandag 19 oktober · Albaicín en Sacromonte',intro:'Langs de Darro naar de oude wijken op de heuvel. Steile, soms ongelijke straten; stevige schoenen. Sacromonte is een optionele omweg. Het uitzichtpunt San Nicolás ligt niet aan een vlakke wandelroute.'},
-'20': {label:'Dinsdag 20 oktober · Extra korte wandeling',intro:'Twee optionele monumenten als je voor vertrek nog tijd over hebt. Check zelf de openingstijden. Je kunt deze wandeling volledig overslaan.'}
-};
-let stops=[], day='17', active=0, markers=[], line=null, gpsWatch=null, gpsMarker=null, visited=new Set();
-try { visited=new Set(JSON.parse(localStorage.getItem('granada-visited')||'[]')); } catch (_) {}
-const map=L.map('map',{zoomControl:false,attributionControl:true}).setView([37.1780,-3.5947],14);
-L.control.zoom({position:'bottomright'}).addTo(map);
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-function group(){return stops.filter(x=>x.day===day);}
-function indexOfId(id){return group().findIndex(s=>s.id===id);}
-function saveVisited(){try{localStorage.setItem('granada-visited',JSON.stringify([...visited]));}catch(_){}}
-function makeMarker(n,selected,done){
-  const classes='stop-marker'+(selected?' selected':'')+(done?' done':'');
-  return L.divIcon({className:'',html:'<span class="'+classes+'">'+(n+1)+'</span>',iconSize:[32,32],iconAnchor:[16,16]});
+const routes=window.GRANADA_ROUTES||[];
+const $=id=>document.getElementById(id);
+if(!routes.length||!window.L){$('peekName').textContent='Kaart niet beschikbaar';return}
+const map=L.map('map',{zoomControl:false,preferCanvas:true}).setView([37.178,-3.593],14);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
+ maxZoom:19,attribution:'© OpenStreetMap-bijdragers'
+}).addTo(map);
+L.control.zoom({position:'topright'}).addTo(map);
+let route=routes[0],active=0,markers=[],routeLine=null,watch=null,positionMarker=null;
+const storageKey='granada-guide-visited-v1';
+let visited=[];
+try{visited=JSON.parse(localStorage.getItem(storageKey)||'[]');if(!Array.isArray(visited))visited=[]}catch{visited=[]}
+const visitedSet=new Set(visited);
+const selectedKey=idx=>route.id+':'+idx;
+function persist(){try{localStorage.setItem(storageKey,JSON.stringify([...visitedSet]))}catch{}}
+function iconFor(idx){
+ const done=visitedSet.has(selectedKey(idx));
+ const classes=['stop-marker',idx===active?'selected':'',done?'done':''].filter(Boolean).join(' ');
+ return L.divIcon({className:'',html:'<div class="'+classes+'">'+(idx+1)+'</div>',iconSize:[32,32],iconAnchor:[16,16]});
 }
-function expand(){ $('sheet').classList.remove('collapsed');$('collapse').setAttribute('aria-expanded','true');$('chevron').textContent='⌄'; }
-function setDay(d,focus=true){
-  if(!DAYS[d])d='17';day=d;$('route').value=d;active=0;
-  markers.forEach(m=>map.removeLayer(m));markers=[];
-  if(line){map.removeLayer(line);line=null;}
-  const a=group();
-  a.forEach((s,i)=>{
-    const m=L.marker([s.lat,s.lng],{icon:makeMarker(i,false,visited.has(s.id)),title:(i+1)+'. '+s.name}).addTo(map);
-    m.on('click',()=>{show(i);expand()});markers.push(m);
-  });
-  if(a.length>1)line=L.polyline(a.map(s=>[s.lat,s.lng]),{color:'#ba6549',weight:3,dashArray:'5 9',opacity:.8,interactive:false}).addTo(map);
-  $('routeLabel').textContent=DAYS[d].label;
-  $('routeMeta').textContent=DAYS[d].label;
-  $('routeIntro').textContent=DAYS[d].intro;
-  drawList();
-  show(0,false);
-  if(focus)fit();
+function openSheet(open){
+ $('sheet').classList.toggle('collapsed',!open);
+ $('collapse').setAttribute('aria-expanded',String(open));
+ $('chevron').textContent=open?'⌄':'⌃';
+ requestAnimationFrame(()=>map.invalidateSize({pan:false}));
 }
-function fit(){
-  const a=group();if(!a.length)return;
-  const bounds=L.latLngBounds(a.map(s=>[s.lat,s.lng]));
-  if(a.length===1)map.setView(bounds.getCenter(),16);
-  else map.fitBounds(bounds.pad(.19),{paddingTopLeft:[20,100],paddingBottomRight:[20,130],maxZoom:16,animate:true});
+function repaintMarkers(){markers.forEach((m,i)=>m.setIcon(iconFor(i)))}
+function renderList(){
+ const container=$('stopList');container.replaceChildren();
+ route.stops.forEach((s,idx)=>{
+   const b=document.createElement('button');b.type='button';b.className=idx===active?'current':'';
+   const n=document.createElement('span');n.className='num'+(visitedSet.has(selectedKey(idx))?' done':'');n.textContent=String(idx+1);
+   const name=document.createElement('span');name.textContent=s.name;
+   b.append(n,name);b.addEventListener('click',()=>{renderStop(idx,{expand:true,pan:true});$('listDetails').open=false});
+   container.append(b);
+ });
 }
-function drawList(){
-  const host=$('stopList');host.replaceChildren();
-  group().forEach((s,i)=>{
-    const b=document.createElement('button');b.type='button';b.className=i===active?'current':'';
-    const n=document.createElement('span');n.className='num'+(visited.has(s.id)?' done':'');n.textContent=i+1;
-    const name=document.createElement('span');name.textContent=s.name+(s.optional?' · optioneel':'');
-    b.append(n,name);b.addEventListener('click',()=>{show(i);$('listDetails').open=false;expand()});
-    host.appendChild(b);
-  });
+function renderStop(i,{expand=false,pan=false}={}){
+ const count=route.stops.length;active=((i%count)+count)%count;const s=route.stops[active];
+ $('routeLabel').textContent=route.label;
+ $('peekName').textContent=(active+1)+'. '+s.name;
+ $('stopCount').textContent='Halte '+(active+1)+' van '+count;
+ $('stopName').textContent=s.name;
+ $('kicker').textContent=s.kicker;
+ $('story').textContent=s.story;
+ $('tip').textContent=s.tip;
+ $('tip').hidden=!s.tip;
+ const done=visitedSet.has(selectedKey(active));
+ $('visited').textContent=done?'✓ Bezocht':'Markeer bezocht';
+ $('visited').classList.toggle('visited',done);
+ $('directions').href='https://www.google.com/maps/dir/?api=1&destination='+encodeURIComponent(s.lat.toFixed(6)+','+s.lng.toFixed(6))+'&travelmode=walking';
+ repaintMarkers();renderList();
+ if(expand)openSheet(true);
+ if(pan){
+   const shift=window.innerWidth<800&&expand?0.0016:0;
+   map.setView([s.lat-shift,s.lng],Math.max(map.getZoom(),16),{animate:true});
+ }
+ $('content').scrollTop=0;
 }
-function detailNote(s){
-  const byName={
-    'Alcazaba':'Binnenkomst vereist een passend Alhambra-ticket. Zonder ticket kun je het verhaal lezen en de omgeving bekijken waar toegankelijk.',
-    'Palacios Nazaríes':'Voor de Nasridische paleizen is een ticket met gereserveerd tijdslot nodig. Deze stop kan ook als historische uitleg buiten worden gebruikt.',
-    'Generalife':'De tuinen van Generalife behoren tot het ticketgebied. Ga alleen naar binnen als je toegang hebt.',
-    'Carmen de los Mártires':'Optioneel; controleer vóór vertrek openingstijden en toegankelijke ingangen.',
-    'Sacromonte':'Optionele, langere wandeling met flinke hoogteverschillen. Keer bij Casa del Chapiz terug als je de extra klim wilt overslaan.',
-    'Basílica de San Juan de Dios':'Optioneel voor vertrek. Toegang kan betaald zijn en openingstijden kunnen afwijken.',
-    'Monasterio de San Jerónimo':'Optioneel voor vertrek. Controleer openingstijden.'
-  };
-  return byName[s.name]||'';
+function fitRoute(){
+ const coords=route.stops.map(s=>[s.lat,s.lng]);
+ map.fitBounds(L.latLngBounds(coords).pad(.18),{animate:true,maxZoom:15,paddingTopLeft:[45,95],paddingBottomRight:[35,120]});
 }
-function show(i,pan=true){
-  const a=group();if(!a.length)return;
-  active=(i+a.length)%a.length;
-  const s=a[active];
-  $('stopName').textContent=s.name;
-  $('peekName').textContent=(active+1)+'. '+s.name;
-  $('kicker').textContent=s.title;
-  $('story').textContent=s.story;
-  $('stopCount').textContent='Halte '+(active+1)+' van '+a.length+(s.optional?' · optioneel':'');
-  $('visited').textContent=visited.has(s.id)?'✓ Bezocht':'Markeer bezocht';
-  $('visited').classList.toggle('visited',visited.has(s.id));
-  $('directions').href='https://www.google.com/maps/dir/?api=1&destination='+encodeURIComponent(s.lat+','+s.lng)+'&travelmode=walking';
-  const note=detailNote(s);$('tip').hidden=!note;$('tip').textContent=note;
-  markers.forEach((m,k)=>m.setIcon(makeMarker(k,k===active,visited.has(a[k].id))));
-  drawList();
-  try{history.replaceState(null,'','#'+day+'-'+s.id)}catch(_){}
-  if(pan)map.panTo([s.lat,s.lng],{animate:true});
-  $('content').scrollTop=0;
+function setRoute(id){
+ route=routes.find(r=>r.id===id)||routes[0];active=0;
+ $('route').value=route.id;
+ $('routeMeta').textContent=route.duration+' · '+route.stops.length+' haltes';
+ $('routeIntro').textContent=route.intro;
+ markers.forEach(m=>map.removeLayer(m));markers=[];
+ if(routeLine){map.removeLayer(routeLine);routeLine=null}
+ const coords=route.stops.map(s=>[s.lat,s.lng]);
+ routeLine=L.polyline(coords,{color:'#396b73',weight:3,opacity:.72,dashArray:'5,9',interactive:false}).addTo(map);
+ route.stops.forEach((s,idx)=>{
+   const m=L.marker([s.lat,s.lng],{icon:iconFor(idx),keyboard:true,title:(idx+1)+'. '+s.name}).addTo(map);
+   m.on('click',()=>renderStop(idx,{expand:true,pan:true}));markers.push(m);
+ });
+ $('listDetails').open=false;renderStop(0);openSheet(false);
+ setTimeout(fitRoute,80);
 }
-$('route').addEventListener('change',e=>{setDay(e.target.value);expand()});
-$('prev').addEventListener('click',()=>{show(active-1);expand()});
-$('next').addEventListener('click',()=>{show(active+1);expand()});
-$('fit').addEventListener('click',fit);
+$('route').addEventListener('change',e=>setRoute(e.target.value));
+$('collapse').addEventListener('click',()=>openSheet($('sheet').classList.contains('collapsed')));
+$('prev').addEventListener('click',()=>renderStop(active-1,{expand:true,pan:true}));
+$('next').addEventListener('click',()=>renderStop(active+1,{expand:true,pan:true}));
+$('fit').addEventListener('click',()=>{openSheet(false);fitRoute()});
 $('visited').addEventListener('click',()=>{
-  const s=group()[active];
-  if(!s)return;
-  if(visited.has(s.id))visited.delete(s.id);else visited.add(s.id);
-  saveVisited();show(active,false);
+ const k=selectedKey(active);if(visitedSet.has(k))visitedSet.delete(k);else visitedSet.add(k);
+ persist();renderStop(active);
 });
-$('collapse').addEventListener('click',()=>{
-  const collapsed=$('sheet').classList.toggle('collapsed');
-  $('collapse').setAttribute('aria-expanded',String(!collapsed));
-  $('chevron').textContent=collapsed?'⌃':'⌄';
-  setTimeout(()=>map.invalidateSize(),250);
-});
+function status(message){const el=$('locStatus');el.textContent=message;el.style.display=message?'block':'none'}
+function locationUpdate(pos){
+ const latlng=[pos.coords.latitude,pos.coords.longitude];
+ if(!positionMarker){
+   positionMarker=L.circleMarker(latlng,{radius:9,color:'#fff',weight:3,fillColor:'#347bc7',fillOpacity:1}).addTo(map);
+ }else positionMarker.setLatLng(latlng);
+ $('locate').textContent='◎ GPS actief';status('Locatie bepaald. Blauwe stip = jij.');
+}
 $('locate').addEventListener('click',()=>{
-  const status=$('locStatus');status.style.display='block';
-  if(gpsWatch!==null){navigator.geolocation.clearWatch(gpsWatch);gpsWatch=null;$('locate').textContent='◎ Mijn locatie';status.textContent='GPS gestopt';return;}
-  if(!navigator.geolocation){status.textContent='GPS is niet beschikbaar in deze browser.';return;}
-  status.textContent='Locatie zoeken…';
-  gpsWatch=navigator.geolocation.watchPosition(p=>{
-    const ll=[p.coords.latitude,p.coords.longitude];
-    if(!gpsMarker){gpsMarker=L.marker(ll,{icon:L.divIcon({className:'',html:'<div class="user-dot"></div>',iconSize:[17,17],iconAnchor:[8,8]})}).addTo(map);}
-    else gpsMarker.setLatLng(ll);
-    $('locate').textContent='● GPS actief';status.textContent='GPS actief · nauwkeurigheid circa '+Math.round(p.coords.accuracy)+' m';
-  },e=>{status.textContent='GPS niet beschikbaar: '+e.message;},{enableHighAccuracy:true,maximumAge:7000,timeout:18000});
+ if(!navigator.geolocation){status('GPS is niet beschikbaar in deze browser.');return}
+ if(watch!==null){
+   navigator.geolocation.clearWatch(watch);watch=null;
+   if(positionMarker){map.removeLayer(positionMarker);positionMarker=null}
+   $('locate').textContent='◎ Mijn locatie';status('GPS uitgeschakeld.');return;
+ }
+ status('GPS-locatie ophalen…');
+ watch=navigator.geolocation.watchPosition(locationUpdate,error=>{
+   status('Locatie niet beschikbaar: '+error.message);
+   if(error.code===1){navigator.geolocation.clearWatch(watch);watch=null;$('locate').textContent='◎ Mijn locatie'}
+ },{enableHighAccuracy:true,maximumAge:10000,timeout:20000});
 });
-fetch('./stops.json',{cache:'no-store'})
-  .then(r=>{if(!r.ok)throw Error('Verhalen niet gevonden ('+r.status+')');return r.json();})
-  .then(data=>{
-    if(!Array.isArray(data)||!data.length)throw Error('Geen haltes in de gids');
-    stops=data;const hash=location.hash.match(/^#(17|18|19|20)-(\d+)$/);
-    const route=hash?hash[1]:'17';setDay(route);
-    if(hash){const i=indexOfId(hash[2]);if(i>=0)show(i,true);}
-  })
-  .catch(err=>{
-    $('peekName').textContent='Gids kan niet worden geladen';
-    $('stopName').textContent='De verhalen zijn tijdelijk niet bereikbaar';
-    $('story').textContent='Herlaad de pagina met internetverbinding. Fout: '+err.message;
-    $('routeIntro').textContent='';$('stopCount').textContent='';
-  });
+window.addEventListener('resize',()=>map.invalidateSize({pan:false}));
+setRoute($('route').value);
 })();

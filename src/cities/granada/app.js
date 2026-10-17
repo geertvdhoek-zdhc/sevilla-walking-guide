@@ -7,7 +7,7 @@ const map=L.map('map',{zoomControl:false,preferCanvas:true}).setView([37.178,-3.
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
  maxZoom:19,attribution:'© OpenStreetMap-bijdragers'
 }).addTo(map);
-L.control.zoom({position:'topright'}).addTo(map);
+L.control.zoom({position:'bottomleft'}).addTo(map);
 let route=routes[0],active=0,markers=[],routeLine=null,watch=null,positionMarker=null;
 const storageKey='granada-guide-visited-v1';
 let visited=[];
@@ -45,7 +45,7 @@ function renderStop(i,{expand=false,pan=false}={}){
  $('stopName').textContent=s.name;
  $('kicker').textContent=s.kicker;
  $('story').textContent=s.story;
- $('tip').textContent=s.tip;
+ $('tip').textContent=s.tip?'Kijk of doe: '+s.tip:'';
  $('tip').hidden=!s.tip;
  const done=visitedSet.has(selectedKey(active));
  $('visited').textContent=done?'✓ Bezocht':'Markeer bezocht';
@@ -54,14 +54,25 @@ function renderStop(i,{expand=false,pan=false}={}){
  repaintMarkers();renderList();
  if(expand)openSheet(true);
  if(pan){
-   const shift=window.innerWidth<800&&expand?0.0016:0;
-   map.setView([s.lat-shift,s.lng],Math.max(map.getZoom(),16),{animate:true});
+   const zoom=Math.max(map.getZoom(),16);
+   const point=map.project([s.lat,s.lng],zoom);
+   const mobile=window.innerWidth<800;
+   const offsetY=mobile&&expand?Math.min(230,$('sheet').offsetHeight*.48):0;
+   const offsetX=mobile?0:235;
+   const centered=map.unproject([point.x-offsetX,point.y+offsetY],zoom);
+   map.setView(centered,zoom,{animate:true});
  }
  $('content').scrollTop=0;
 }
 function fitRoute(){
  const coords=route.stops.map(s=>[s.lat,s.lng]);
- map.fitBounds(L.latLngBounds(coords).pad(.18),{animate:true,maxZoom:15,paddingTopLeft:[45,95],paddingBottomRight:[35,120]});
+ const mobile=window.innerWidth<800;
+ const collapsed=$('sheet').classList.contains('collapsed');
+ map.fitBounds(L.latLngBounds(coords).pad(.18),{
+   animate:true,maxZoom:15,
+   paddingTopLeft:mobile?[30,95]:[480,90],
+   paddingBottomRight:mobile?[25,collapsed?105:Math.min(380,Math.floor(window.innerHeight*.54))]:[30,30]
+ });
 }
 function setRoute(id){
  route=routes.find(r=>r.id===id)||routes[0];active=0;

@@ -1,0 +1,109 @@
+{
+  "id": "albaicin",
+  "title": "Albaicín & Sacromonte",
+  "short": "Darro, Moorse woonstraten, uitzicht en grotwoningen",
+  "time": "Heuvelachtig · neem goede schoenen mee",
+  "color": "#347f7a",
+  "stops": [
+    {
+      "id": "a1",
+      "name": "Carrera del Darro",
+      "lat": 37.17806,
+      "lng": -3.59443,
+      "heading": "Een rivier als straat",
+      "story": "De Darro stroomt hier vlak naast de straat, onder kleine bruggen door en tussen steile hellingen. Je loopt op de grens tussen de heuvel van het Alhambra en het Albaicín. Dit is geen toevallig pittoresk dal: de rivier leverde water aan huizen, werkplaatsen en badhuizen, maar was ook een obstakel waarover bruggen en doorgangen nodig waren. Achter de gevels liggen soms oude binnenplaatsen en tuinen, van buiten nauwelijks te zien. Het contrast tussen de drukte van Plaza Nueva en het geluid van stromend water is opvallend. Kijk ook naar de smalle doorsneden van de huizen: in Granada was bouwen vaak een kwestie van elke meter tussen rivier en helling benutten.",
+      "tip": "Loop aan de kant van de straat; de bestrating en doorgangen zijn smal.",
+      "access": "Vrij toegankelijk"
+    },
+    {
+      "id": "a2",
+      "name": "El Bañuelo",
+      "lat": 37.17923,
+      "lng": -3.59249,
+      "heading": "Een badhuis dat bijna verdween",
+      "story": "Dit historische Arabische badhuis dateert vermoedelijk uit de elfde eeuw en is een van de best bewaarde voorbeelden in Spanje. Badhuizen waren geen luxe die alleen voor vorsten was weggelegd. Ze speelden een rol in reiniging, sociaal contact en de dagelijkse organisatie van de wijk. Het licht viel door kleine stervormige openingen in de gewelven, waardoor de ruimtes een heel eigen sfeer kregen. Na de machtswisseling van 1492 veranderde de plaats van dergelijke badhuizen in de samenleving ingrijpend. Dat juist dit gebouw bleef bestaan, maakt het uitzonderlijk. Kijk van buiten naar de bescheiden schaal: belangrijke geschiedenis zit in Granada regelmatig achter een eenvoudige ingang.",
+      "tip": "Wie naar binnen wil, moet de actuele toegangsregeling controleren.",
+      "access": "Interieur: toegang kan betaald zijn"
+    },
+    {
+      "id": "a3",
+      "name": "Casa de Zafra",
+      "lat": 37.18004,
+      "lng": -3.59153,
+      "heading": "Het verborgen leven achter een witte muur",
+      "story": "In het Albaicín vertelt een woning soms meer dan een paleis. Casa de Zafra is een gerestaureerd Nasridisch huis met een binnenplaats, kamers en een indeling die veel aandacht gaf aan privacy. Van de straat zag je maar weinig; het belangrijkste leven speelde zich naar binnen gekeerd af. Die architectuur had praktische voordelen in hete zomers: schaduw, luchtstromen en een beschutte buitenruimte. De wijk staat bekend om haar ‘cármenes’, huizen met ommuurde tuinen, al hebben die verschillende historische wortels. Het interessante aan deze plek is dat de stad niet alleen bestond uit moskeeën en forten. Ze bestond vooral uit huishoudens, buren, kinderen en alledaagse routines die zelden in grote geschiedenissen voorkomen.",
+      "tip": "Een eventuele binnenbezichtiging hangt af van openingstijden.",
+      "access": "Binnen: openingstijden controleren"
+    },
+    {
+      "id": "a4",
+      "name": "Paseo de los Tristes",
+      "lat": 37.18004,
+      "lng": -3.58862,
+      "heading": "De treurige naam van een vrolijk plein",
+      "story": "De bijnaam Paseo de los Tristes, ‘wandeling van de treurigen’, verwijst naar begrafenisstoeten die vroeger via deze route naar de begraafplaats op de heuvel trokken. Tegenwoordig staan er terrassen en klinkt er muziek; de naam past nauwelijks bij de sfeer. Maar precies dat is interessant: plaatsnamen zijn kleine capsules van verdwenen gewoonten. Kijk naar het Alhambra hoog boven je, dat van hier minder als één paleis en meer als een reeks muren en gebouwen zichtbaar is. De steile heuvel bepaalt het licht, de routes en de schaal van het dal. Vroeger was dit geen toeristische uitzichtplek, maar een overgang tussen stedelijke straten en de wegen langs de rivier.",
+      "tip": "Goed punt voor een pauze; de volgende stukken gaan omhoog.",
+      "access": "Vrij toegankelijk"
+    },
+    {
+      "id": "a5",
+      "name": "Cuesta del Chapiz",
+      "lat": 37.18139,
+      "lng": -3.58785,
+      "heading": "De helling waar twee wijken elkaar raken",
+      "story": "Deze steile weg is een van de verbindingen tussen Albaicín en Sacromonte. Vanaf de kruising bij de rivier merk je hoe belangrijk hoogteverschil in Granada is: wat op de kaart dichtbij lijkt, kost in werkelijkheid extra tijd en energie. Langs de weg liggen historische huizen en tuinen, waaronder complexen die teruggaan op de periode na de verovering. Sommige bewoners van het islamitische Granada bleven aanvankelijk in de stad wonen, maar werden geleidelijk geconfronteerd met steeds strengere beperkingen en uiteindelijk verdrijving. De architectuur langs de helling getuigt van die ingewikkelde overgang, met oudere woonvormen en latere aanpassingen naast elkaar. Hier verandert het verhaal van koningen weer in dat van buurten.",
+      "tip": "Steile klim, soms gladde stenen; kies een kortere route als dat nodig is.",
+      "access": "Vrij toegankelijk"
+    },
+    {
+      "id": "a6",
+      "name": "Camino del Sacromonte",
+      "lat": 37.18216,
+      "lng": -3.58494,
+      "heading": "Grotwoningen en de geschiedenis van flamenco",
+      "story": "Aan de Sacromonte-heuvel zijn woningen en ruimtes in de zachte aarde uitgehouwen. Sommige grotwoningen worden nog altijd bewoond; andere zijn musea of locaties voor flamencovoorstellingen. De wijk is sterk verbonden met de geschiedenis van Roma-gemeenschappen in Granada. Flamenco is hier geen simpel decorstuk voor toeristen: zang, dans en ritme ontwikkelden zich in complexe uitwisseling tussen verschillende Andalusische gemeenschappen. Het beeld van ‘authentieke grotten’ kan die geschiedenis versimpelen. Kijk daarom ook naar de gewone huizen, trappen en dagelijkse infrastructuur. Sacromonte is zowel een levende wijk als een plek die van buitenaf vaak romantisch wordt voorgesteld. En terwijl je naar het Alhambra kijkt, zie je waarom dit uitzicht generaties kunstenaars aansprak.",
+      "tip": "Optionele verlenging; het is een behoorlijke klim en je kunt hier omkeren.",
+      "access": "Vrije straat; musea en optredens betaald"
+    },
+    {
+      "id": "a7",
+      "name": "Mirador de San Nicolás",
+      "lat": 37.18114,
+      "lng": -3.59251,
+      "heading": "Waarom dit panorama wereldberoemd werd",
+      "story": "Vanaf dit plein staat het Alhambra bijna op ooghoogte tegenover je, met daarachter de Sierra Nevada. Het uitzicht heeft drie lagen: een islamitisch paleiscomplex, de tuinen en stad eronder, en de bergen die de horizon afbakenen. Dat is geen toevallige ansichtkaartcompositie; de ligging van Granada in de valleien en op de heuvels maakte zulke verdedigbare hoogtepunten mogelijk. Op heldere dagen vallen de bergen extra op, soms met sneeuw wanneer het beneden zacht weer is. Het plein zelf is een ontmoetingsplek voor bewoners, bezoekers en muzikanten. Dat maakt het uitzicht niet minder mooi, maar helpt je te begrijpen waarom dit niet simpelweg een fotopunt is. Het is een openbaar balkon van een echte wijk.",
+      "tip": "Bij zonsondergang vaak druk. Je kunt ook eerder op de dag komen.",
+      "access": "Vrij toegankelijk"
+    },
+    {
+      "id": "a8",
+      "name": "Plaza Larga",
+      "lat": 37.18324,
+      "lng": -3.59205,
+      "heading": "Een buurtplein tussen grote verhalen",
+      "story": "Na de beroemde uitzichtpunten is dit een goede plek om het alledaagse Albaicín te zien. Plaza Larga heeft nog steeds het karakter van een buurtplein, met kleine winkels en horeca rondom. De nabijgelegen poorten herinneren aan de vroegere stadsmuren, maar binnen die muren draaide niet elke dag om politiek of oorlog. Er moesten goederen worden aangevoerd, buren ontmoetten elkaar, en de openbare ruimte kreeg steeds nieuwe functies. De naam ‘lange plein’ is verrassend letterlijk: de langgerekte vorm laat zien hoe een stedelijke doorgang ook een markt- en ontmoetingsplek kon worden. Neem een paar minuten om het plein te bekijken zonder naar een monument te zoeken.",
+      "tip": "Prettige pauzeplek. In de ochtend is de buurt vaak levendiger.",
+      "access": "Vrij toegankelijk"
+    },
+    {
+      "id": "a9",
+      "name": "Puerta de las Pesas",
+      "lat": 37.1831,
+      "lng": -3.59127,
+      "heading": "Een toegangspoort met een vreemde bijnaam",
+      "story": "Deze historische poort maakt deel uit van de oude verdedigingswerken van het Albaicín. De naam ‘Poort van de Gewichten’ verwijst naar een lokale overlevering over in beslag genomen onjuiste marktgewichten die hier zouden zijn opgehangen. Of elk detail van die uitleg historisch vaststaat, is minder interessant dan wat ze zegt over stadsleven: poorten waren niet alleen militaire doorgangen, maar ook plekken waar handel en controle elkaar raakten. Kijk naar de bochtige toegang. Zo’n vorm maakte het voor aanvallers lastiger om eenvoudig recht de stad binnen te komen. De poort geeft een veel tastbaarder idee van een ommuurde stad dan een plattegrond ooit kan.",
+      "tip": "Steek door de poort en bekijk beide zijden.",
+      "access": "Vrij toegankelijk"
+    },
+    {
+      "id": "a10",
+      "name": "Palacio de Dar al-Horra",
+      "lat": 37.18268,
+      "lng": -3.59423,
+      "heading": "Een paleis midden in een woonwijk",
+      "story": "Het vijftiende-eeuwse Dar al-Horra is veel bescheidener dan het Alhambra, maar historisch niet minder boeiend. Het wordt traditioneel verbonden met Aixa, de moeder van Boabdil, de laatste Nasridische heerser van Granada. Die associatie herinnert eraan dat koninklijke families niet uitsluitend in het grote paleis leefden. Ook binnen de stad waren residenties waar politiek en privéleven elkaar raakten. Vanuit de nauwe straten zie je het complex nauwelijks; opnieuw draait de architectuur om een besloten binnenwereld. Het Nasridische Granada werd niet in één keer afgebroken na 1492. Gebouwen werden hergebruikt, veranderd en soms eeuwen later gerestaureerd. Dat lange na-leven is hier goed te voelen.",
+      "tip": "Binnenbezoek afhankelijk van actuele opening en ticketregeling.",
+      "access": "Interieur: toegang controleren"
+    }
+  ]
+}

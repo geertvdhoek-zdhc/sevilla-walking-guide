@@ -81,8 +81,30 @@ function setRoute(id){
  $('routeIntro').textContent=route.intro;
  markers.forEach(m=>map.removeLayer(m));markers=[];
  if(routeLine){map.removeLayer(routeLine);routeLine=null}
- const coords=route.stops.map(s=>[s.lat,s.lng]);
- routeLine=L.polyline(coords,{color:'#396b73',weight:3,opacity:.72,dashArray:'5,9',interactive:false}).addTo(map);
+ // Build the full itinerary as pedestrian directions. For long days Google Maps
+ // may impose a waypoint limit; the first part links through all defined stops.
+ const waypoints=route.stops.slice(1,-1).map(s=>s.lat.toFixed(6)+','+s.lng.toFixed(6));
+ const start=route.stops[0],end=route.stops[route.stops.length-1];
+ const params=new URLSearchParams({api:'1',origin:start.lat.toFixed(6)+','+start.lng.toFixed(6),destination:end.lat.toFixed(6)+','+end.lng.toFixed(6),travelmode:'walking'});
+ if(waypoints.length)params.set('waypoints',waypoints.join('|'));
+ $('fullRoute').href='https://www.google.com/maps/dir/?'+params.toString();
+ $('walkStatus').textContent='Voetgangersroute laden…';
+ const requestedRouteId=route.id;
+ const coordinates=route.stops.map(s=>s.lng.toFixed(6)+','+s.lat.toFixed(6)).join(';');
+ const url='https://routing.openstreetmap.de/routed-foot/route/v1/driving/'+coordinates+'?overview=full&geometries=geojson&steps=false';
+ fetch(url,{mode:'cors'}).then(r=>{if(!r.ok)throw new Error('HTTP '+r.status);return r.json()}).then(result=>{
+   if(route.id!==requestedRouteId)return;
+   const geometry=result?.routes?.[0]?.geometry;
+   if(!geometry || geometry.type!=='LineString'||!Array.isArray(geometry.coordinates))throw new Error('Geen voetpad gevonden');
+   const actual=geometry.coordinates.map(p=>[p[1],p[0]]);
+   routeLine=L.polyline(actual,{color:'#315f64',weight:5,opacity:.92,interactive:false}).addTo(map);
+   const distance=result.routes[0].distance;
+   const km=(distance/1000).toFixed(1).replace('.',',');
+   $('walkStatus').textContent='Voetgangersroute · '+km+' km (exclusief omwegen of binnenbezoeken)';
+ }).catch(()=>{
+   if(route.id!==requestedRouteId)return;
+   $('walkStatus').textContent='Kaart toont haltes. Open “Wandel hele route” voor voetgangersnavigatie in Google Maps.';
+ });
  route.stops.forEach((s,idx)=>{
    const m=L.marker([s.lat,s.lng],{icon:iconFor(idx),keyboard:true,title:(idx+1)+'. '+s.name}).addTo(map);
    m.on('click',()=>renderStop(idx,{expand:true,pan:true}));markers.push(m);

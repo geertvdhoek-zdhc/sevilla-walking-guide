@@ -1,0 +1,99 @@
+{
+  "id": "centrum",
+  "title": "Historisch centrum",
+  "short": "Kathedraal, handelswijk en oude machtscentra",
+  "time": "Fijne eerste middag · grotendeels vlak",
+  "color": "#b55a38",
+  "stops": [
+    {
+      "id": "c1",
+      "name": "Plaza Bib-Rambla",
+      "lat": 37.17498,
+      "lng": -3.59952,
+      "heading": "De markt die bleef veranderen",
+      "story": "Dit plein was eeuwenlang een van de levendigste plekken van Granada. In de Nasridische stad lagen hier handelsactiviteiten vlak bij de grote moskee; na de christelijke verovering kreeg de ruimte nieuwe functies, van religieuze feesten tot publieke ceremonies. Let op de opvallende fontein met reuzenfiguren in het midden. De gevels eromheen lijken een harmonieus decor, maar de geschiedenis van Bib-Rambla is juist een verhaal van voortdurende verbouwing. Waar nu terrassen staan, kwamen ooit handelaren, stadsbestuurders en nieuwsgierige inwoners samen. Het plein laat zien dat een stad niet alleen verandert door grote koningen, maar ook doordat de dagelijkse markt steeds opnieuw ruimte opeist.",
+      "tip": "Begin rustig op het plein; de meeste volgende stops liggen op enkele minuten lopen.",
+      "access": "Vrij toegankelijk"
+    },
+    {
+      "id": "c2",
+      "name": "Alcaicería",
+      "lat": 37.17526,
+      "lng": -3.59855,
+      "heading": "Een zijderoute in een smal straatje",
+      "story": "De Alcaicería was het commerciële hart van de zijdehandel. Granada exporteerde onder de Nasriden kostbare stoffen naar veel verder gelegen markten. De nauwe doorgangen en kleine winkelgevels verwijzen naar die wereld, maar wat je nu ziet is niet simpelweg een onaangeroerde middeleeuwse bazaar. Een verwoestende brand in 1843 maakte een groot deel van de oude markt met de grond gelijk. De huidige straatjes zijn daarna herbouwd, in een stijl die bewust aan het verleden herinnert. Dat onderscheid is belangrijk: de plek is historisch, terwijl veel van de architectuur later werd gemaakt. Kijk omhoog naar de ornamenten en vraag je af hoeveel van een stadsbeeld een herinnering is, en hoeveel een reconstructie.",
+      "tip": "Loop door de kleine passage; het is een winkelgebied, geen museum.",
+      "access": "Vrij toegankelijk"
+    },
+    {
+      "id": "c3",
+      "name": "Kathedraal van Granada",
+      "lat": 37.17605,
+      "lng": -3.59914,
+      "heading": "Een renaissancekerk op de plek van een moskee",
+      "story": "De kathedraal staat op de plek van de vroegere hoofdmoskee van Granada. Na 1492 moest de stad niet alleen een nieuwe regering krijgen, maar ook een nieuw zichtbaar middelpunt. De bouw begon in de zestiende eeuw, en juist daarom zie je hier niet de puur gotische stijl die je misschien verwacht. Architect Diego de Siloé gaf de kerk een uitgesproken renaissancetaal: licht, maatvoering en klassieke vormen moesten grootsheid uitdrukken. De massieve buitenkant verraadt nauwelijks hoe hoog en helder het interieur is. De kathedraal was een architectonische proclamatie dat Granada voortaan bij een ander koninkrijk en een andere religieuze orde hoorde. Dat vertelt de bouwgeschiedenis minstens zo duidelijk als een jaartal.",
+      "tip": "De buitenzijde is gratis te zien; toegang tot de kathedraal is betaald.",
+      "access": "Interieur: ticket"
+    },
+    {
+      "id": "c4",
+      "name": "Koninklijke Kapel",
+      "lat": 37.17617,
+      "lng": -3.59882,
+      "heading": "Waar de veroveraars begraven wilden worden",
+      "story": "Isabella van Castilië en Ferdinand van Aragón kozen Granada als hun laatste rustplaats. Dat was geen toevallige keuze: de inname van de stad in 1492 vormde het symbolische sluitstuk van hun gezamenlijke machtspolitiek. De Koninklijke Kapel is daardoor meer dan een grafmonument. Ze is onderdeel van een zorgvuldig verteld verhaal over een verenigd christelijk Spanje. In en rond diezelfde periode veranderde het leven van moslims en joden ingrijpend, door bekeringseisen, verdrijving en de steeds strengere politiek van de kroon. De monumenten vieren de heersers; de straat rondom vertelt niet automatisch wat die veranderingen voor de bewoners betekenden. Houd die twee perspectieven naast elkaar wanneer je de kapel bekijkt.",
+      "tip": "De graven liggen binnen. Van buiten zie je hoe de kapel tegen de kathedraal aansluit.",
+      "access": "Interieur: ticket"
+    },
+    {
+      "id": "c5",
+      "name": "Palacio de la Madraza",
+      "lat": 37.17629,
+      "lng": -3.59843,
+      "heading": "Een universiteit vóór de moderne universiteit",
+      "story": "Hier stond een van de beroemdste onderwijsinstellingen van islamitisch Granada. Sultan Yusuf I stichtte in 1349 een madrasa, een plek voor hoger onderwijs in onder meer religie, recht en taal. De oorspronkelijke instelling verdween na de christelijke verovering; het gebouw kreeg bestuurlijke functies en werd ingrijpend verbouwd. Toch zijn er nog sporen van de Nasridische decoratie te zien, waaronder verfijnd stucwerk. Het verrassende aan deze halte is hoe dicht wetenschap, bestuur en geloof bij elkaar lagen. Onderwijs was niet alleen privékennis vergaren, maar ook een manier om een stad en haar instituties te organiseren. Zelfs de buitenkant van het gebouw vertelt dus een verhaal over de strijd om welke kennis centraal mocht staan.",
+      "tip": "Kleine binnenruimtes zijn mogelijk alleen met toegang of rondleiding te zien.",
+      "access": "Toegang kan beperkt zijn"
+    },
+    {
+      "id": "c6",
+      "name": "Corral del Carbón",
+      "lat": 37.17523,
+      "lng": -3.59803,
+      "heading": "Het hotel voor handelaren en hun dieren",
+      "story": "Achter de poort schuilt een heel ander Granada: dat van kooplieden, voorraden en overnachtingen. Dit veertiende-eeuwse gebouw diende als een funduq, een herberg en opslagplaats waar reizende handelaren hun goederen konden onderbrengen. De centrale binnenplaats was vooral praktisch: er moest ruimte zijn voor laden, lossen, mensen en dieren. De decoratieve ingang toont intussen hoe representatie en logistiek samenkwamen. Na de verovering veranderde de functie meermaals; de naam herinnert aan de latere handel in houtskool. Het Corral del Carbón geldt als een uitzonderlijk goed bewaard voorbeeld van zo’n Nasridisch handelsgebouw. Hier ervaar je de geschiedenis niet als koninklijk paleis, maar als bedrijvigheid.",
+      "tip": "Kijk vanaf de poort naar de binnenplaats; toegang en uren kunnen wisselen.",
+      "access": "Binnenplaats: afhankelijk van opening"
+    },
+    {
+      "id": "c7",
+      "name": "Plaza Isabel la Católica",
+      "lat": 37.17655,
+      "lng": -3.59723,
+      "heading": "Een standbeeld dat een verhaal kiest",
+      "story": "Op dit verkeersknooppunt zie je een beeldengroep van koningin Isabella en Christoffel Columbus. Het monument verbeeldt Columbus die zijn plannen presenteert aan de vorstin. Als stedelijke geschiedenis is dat niet neutraal: monumenten kiezen wie de hoofdpersonen zijn en welk moment als begin van iets groots wordt afgebeeld. In 1492 viel Granada, en in hetzelfde jaar voer Columbus richting het Caribisch gebied. Die twee gebeurtenissen komen hier bijna samen in één politiek verhaal over de Spaanse monarchie. Maar voor andere gemeenschappen betekenden dezelfde jaren verlies van rechten, verdrijving of later koloniale overheersing. Het plein is een goede plek om te zien hoe publieke kunst een verleden samenvat — en hoeveel die samenvatting weglaat.",
+      "tip": "Let op het reliëf en de houding van de figuren; steek de wegen voorzichtig over.",
+      "access": "Vrij toegankelijk"
+    },
+    {
+      "id": "c8",
+      "name": "Plaza Nueva",
+      "lat": 37.17695,
+      "lng": -3.59635,
+      "heading": "Het plein boven een verborgen rivier",
+      "story": "Plaza Nueva heet ‘nieuw plein’, maar het is een van de oudste grote openbare pleinen van het christelijke Granada. Het ligt op een strategisch punt tussen het centrum, het Albaicín en de weg naar het Alhambra. Onder en langs dit gebied stroomt de Darro, die op verschillende plekken in de stad is overbouwd en ingekapseld. De bebouwing werd daarmee ook een ingreep in het landschap. Aan de ene kant begint de nauwe historische rivierstraat, aan de andere kant opent zich de route naar de heuvels. Je ziet hier letterlijk hoe geografie de stad heeft gevormd: een dal, twee hoogtes en een verkeersknooppunt dat al eeuwen mensen verdeelt over verschillende wijken.",
+      "tip": "Voor de volgende route begint hier de Carrera del Darro.",
+      "access": "Vrij toegankelijk"
+    },
+    {
+      "id": "c9",
+      "name": "Real Chancillería",
+      "lat": 37.17742,
+      "lng": -3.5959,
+      "heading": "Rechtspraak als machtsvertoon",
+      "story": "De grote gevel aan Plaza Nueva hoort bij de Real Chancillería, een koninklijk gerechtshof dat onder de katholieke vorsten een centrale plaats kreeg in de bestuurlijke organisatie van Zuid-Spanje. Het imposante renaissancegebouw maakt duidelijk dat macht niet alleen zichtbaar wordt via paleizen en kerken, maar ook via rechtbanken. Wie mocht recht spreken, volgens welke wetten, en over wie? In een stad waar na 1492 verschillende religieuze en sociale gemeenschappen opnieuw werden ingedeeld, waren dit vragen met directe gevolgen. De gevel presenteert orde, symmetrie en autoriteit. Achter dat stenen decor lag een systeem waarin beslissingen over bezit, conflicten en sociale positie werden genomen.",
+      "tip": "Bekijk de gevel vanaf de overkant van Plaza Nueva.",
+      "access": "Buitenzijde"
+    }
+  ]
+}

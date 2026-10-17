@@ -1,0 +1,99 @@
+{
+  "id": "alhambra",
+  "title": "Alhambra & Realejo",
+  "short": "Van poorten en paleizen naar tuinen en oude buurten",
+  "time": "Veel klimmen · binnenbezoek Alhambra alleen met geldig ticket",
+  "color": "#7056a3",
+  "stops": [
+    {
+      "id": "h1",
+      "name": "Puerta de las Granadas",
+      "lat": 37.1762,
+      "lng": -3.59299,
+      "heading": "De stadspoort van een keizer",
+      "story": "Via deze renaissancepoort loop je van de gewone stad naar de beboste helling van het Alhambra. De poort werd in de zestiende eeuw gebouwd onder keizer Karel V en markeert een verandering in hoe heersers hun macht lieten zien. Waar middeleeuwse vestingpoorten vooral een verdedigingsfunctie hadden, gebruikt deze poort de taal van de klassieke oudheid: symmetrie, stenen bogen en een opvallend monumentale ingang. Let op het contrast met het groen direct erachter. Het pad lijkt romantisch aangelegd voor wandelaars, maar was eeuwenlang de belangrijke verbinding tussen de benedenstad en het paleiscomplex op de heuvel. Je begint hier dus niet alleen een wandeling omhoog, maar gaat van de ene machtswereld naar de andere.",
+      "tip": "Ga door de poort en neem de bosrijke helling rustig.",
+      "access": "Vrij toegankelijk"
+    },
+    {
+      "id": "h2",
+      "name": "Bosque de la Alhambra",
+      "lat": 37.1758,
+      "lng": -3.59129,
+      "heading": "Een aangelegd bos, geen vergeten wildernis",
+      "story": "De schaduwrijke paden richting het Alhambra lijken een vanzelfsprekend stuk natuur. Maar ook dit landschap is in de loop der eeuwen bewust vormgegeven en onderhouden. Bomen, wandelpaden, waterlopen en kleine monumenten maken de klim onderdeel van een ervaring: van de drukke straten beneden naar een besloten hoogte boven de stad. In de islamitische tuincultuur stond water centraal als praktisch én esthetisch element, al zijn veel onderdelen van het huidige bos jonger. Let tijdens het lopen op het geluid van stromend water. Het verzacht de steile helling en laat zien waarom waterbeheersing zo belangrijk was voor het leven op deze hoogte. Zonder kanalen en toevoer was zo’n paleisstad nauwelijks denkbaar.",
+      "tip": "Bosroute zonder ticket; draag schoenen met grip.",
+      "access": "Vrij toegankelijk"
+    },
+    {
+      "id": "h3",
+      "name": "Alcazaba",
+      "lat": 37.17617,
+      "lng": -3.59219,
+      "heading": "Het Alhambra was eerst een vesting",
+      "story": "De oudste militaire kern van het Alhambra is de Alcazaba, met torens en verdedigingsmuren die vanaf de stad beneden bijna overal zichtbaar zijn. Het complex was niet alleen een vorstelijke verzameling binnenplaatsen. Het moest ook bescherming bieden en de toegangswegen overzien. Vanaf de torens zie je waarom deze ligging aantrekkelijk was: je kijkt over de stad, de valleien en verschillende routes naar de bergen. De Nasridische heersers combineerden militaire infrastructuur met representatieve paleizen; veiligheid en pracht waren twee kanten van hetzelfde project. Zonder toegang kun je vanaf buiten al naar de muren en torens kijken. Binnen wordt het verschil tussen een woonpaleis en een fort pas echt duidelijk.",
+      "tip": "De muren kun je buiten de poort zien; voor de Alcazaba zelf is Alhambra-toegang nodig.",
+      "access": "Binnen: Alhambra-ticket"
+    },
+    {
+      "id": "h4",
+      "name": "Palacio de Carlos V",
+      "lat": 37.17648,
+      "lng": -3.58987,
+      "heading": "Een perfecte cirkel midden in een paleisstad",
+      "story": "Het paleis van keizer Karel V steekt scherp af tegen zijn Nasridische omgeving. Binnen een vierkant gebouw ligt een spectaculaire ronde binnenplaats, een architectonisch experiment in renaissancistische proporties. Het bouwproject begon in de zestiende eeuw na het bezoek van de keizer, maar duurde uitzonderlijk lang; eeuwenlang bleef een deel onvoltooid. De vorm is bijna een gesprek — of een machtsverklaring — tegenover de oudere islamitische architectuur. Terwijl de Nasridische paleizen vaak intieme binnenplaatsen en verfijnde decoraties hebben, kiest dit gebouw voor een monumentale klassieke geometrie. Kijk omhoog langs de ronde colonnade: de architectuur trekt je aandacht niet naar een troon maar naar de ruimte zelf.",
+      "tip": "De centrale binnenplaats is vaak zonder Nasridisch-paleisticket bereikbaar; controleer de toegang ter plekke.",
+      "access": "Toegang: regeling controleren"
+    },
+    {
+      "id": "h5",
+      "name": "Nasridische Paleizen",
+      "lat": 37.17713,
+      "lng": -3.58955,
+      "heading": "Een paleis dat je niet in één oogopslag ziet",
+      "story": "De beroemdste zalen van het Alhambra werden niet ontworpen als één groot geveldecor. Je beweegt van smalle doorgangen naar besloten patio’s, van schaduw naar reflecterend water en vervolgens weer naar een rijk versierde zaal. Die opeenvolging is het eigenlijke architectonische meesterwerk. Opschriften in het stucwerk, houtwerk en geometrische patronen verweven kunst en hofcultuur. Het water in bijvoorbeeld de Patio de los Arrayanes is niet alleen decoratie: de spiegeling maakt de ruimte groter en rustiger. Veel bezoekers zoeken één perfecte foto, maar het gebouw is juist bedoeld om langzaam te worden ervaren. Let op de schaal: de details zijn verfijnd, terwijl de kamers vaak menselijker van formaat zijn dan je bij een koninklijk paleis verwacht.",
+      "tip": "Voor de Nasridische Paleizen heb je doorgaans een afzonderlijk tijdslot op je Alhambra-ticket nodig.",
+      "access": "Binnen: ticket en tijdslot vereist"
+    },
+    {
+      "id": "h6",
+      "name": "Generalife",
+      "lat": 37.17765,
+      "lng": -3.58631,
+      "heading": "Een zomerresidentie gebouwd rond water",
+      "story": "De Generalife is nauw verbonden met tuinen, rust en waterlopen. Het was een buitenverblijf van de Nasridische vorsten, gescheiden van het drukke centrum van het paleiscomplex. De naam wordt vaak verklaard als een verwijzing naar een tuin van een bouwmeester, maar over de precieze herkomst bestaan verschillende opvattingen. Wat wel duidelijk is: water speelde hier een hoofdrol. Slimme kanalen voedden fonteinen, irrigatie en beplanting, terwijl de ligging uitzicht bood over de omringende hellingen. De huidige tuinen dragen ook sporen van latere veranderingen en restauraties; je kijkt dus niet simpelweg naar een bevroren tuin uit de veertiende eeuw. Dat maakt ze eigenlijk interessanter: generaties hebben zich afgevraagd hoe deze plek zou moeten aanvoelen.",
+      "tip": "De Generalife ligt verder van de andere paleizen; houd tijd over. Toegang doorgaans met Alhambra-ticket.",
+      "access": "Binnen: Alhambra-ticket"
+    },
+    {
+      "id": "h7",
+      "name": "Carmen de los Mártires",
+      "lat": 37.17291,
+      "lng": -3.5899,
+      "heading": "De tuinen achter de hoge muren",
+      "story": "Een ‘carmen’ is in Granada een woonhuis met een ommuurde tuin, een vorm die sterk met de heuvels van de stad wordt geassocieerd. Carmen de los Mártires is daarvan een uitbundige variant: verschillende tuinstijlen, schaduw, waterpartijen en plekken om even van de stad weg te zijn. Het huidige complex ontstond grotendeels in de negentiende eeuw en is geen rechtstreeks overgebleven Nasridisch paleis. Juist dat misverstand is leerzaam. Granada’s groene karakter is niet afkomstig uit één afgesloten periode, maar uit een lange traditie van aanleggen, vervangen en aanpassen. De tuin voelt intiem, ook al sta je vlak bij een van de beroemdste monumenten van Europa. Een fijne plek om de geschiedenis even te laten bezinken.",
+      "tip": "Openingstijden kunnen wijzigen; controleer of de tuinen toegankelijk zijn.",
+      "access": "Tuin: openingstijden controleren"
+    },
+    {
+      "id": "h8",
+      "name": "Campo del Príncipe",
+      "lat": 37.17273,
+      "lng": -3.59516,
+      "heading": "Het Realejo achter de monumenten",
+      "story": "Dit uitgestrekte plein ligt in het Realejo, een wijk die sterk verbonden is met de geschiedenis van de joodse gemeenschap van Granada vóór 1492. Het huidige stratenbeeld is natuurlijk niet meer dat van het middeleeuwse Garnata al-Yahud, zoals de joodse stad in bronnen wordt aangeduid. Maar juist de veranderde plek is belangrijk: de verovering van Granada werd gevolgd door ingrijpende religieuze en sociale herordening. De naam van het plein verwijst naar een prinselijke gebeurtenis uit de christelijke periode. Aan de randen staan kerken en huizen die andere eeuwen vertegenwoordigen. Hier zie je hoe een wijk steeds opnieuw van betekenis werd voorzien, terwijl gewone bewoners haar dagelijks bleven gebruiken.",
+      "tip": "Goed eindpunt voor een drankje; in deze wijk vind je veel eetgelegenheden.",
+      "access": "Vrij toegankelijk"
+    },
+    {
+      "id": "h9",
+      "name": "Casa de los Tiros",
+      "lat": 37.175,
+      "lng": -3.59668,
+      "heading": "Een gevel die zichzelf verdedigt",
+      "story": "Casa de los Tiros, aan de rand van het Realejo, is een zestiende-eeuws gebouw dat zijn naam dankt aan de kanonlopen die uit de gevel steken. Het uiterlijk is opvallend streng, bijna een klein stadskasteel, terwijl het huis hoorde bij een adellijke familie in de nieuwe christelijke machtsorde. Boven de deur staat een trotse spreuk die vaak wordt vertaald als ‘Het hart beveelt’. Het is architectuur die de status van de eigenaar zichtbaar maakt voor iedereen op straat. Tegenwoordig huisvest het gebouw een museum over de geschiedenis en cultuur van Granada. Een treffende laatste halte: de stad is niet alleen haar beroemde islamitische paleizen, maar ook de eeuwen daarna, met nieuwe elites, nieuwe beeldtaal en nieuwe verhalen.",
+      "tip": "Vanaf de straat goed zichtbaar; het museum heeft eigen openingstijden.",
+      "access": "Museum: openingstijden controleren"
+    }
+  ]
+}

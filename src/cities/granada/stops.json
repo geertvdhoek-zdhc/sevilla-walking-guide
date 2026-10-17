@@ -1,0 +1,262 @@
+[
+  {
+    "id": "01",
+    "day": "17",
+    "name": "Bib-Rambla",
+    "lat": 37.17477,
+    "lng": -3.60031,
+    "title": "Het plein dat steeds opnieuw werd uitgevonden",
+    "story": "Dit levendige plein heette ooit het centrum van veel meer dan terrassen. De naam verwijst naar een oude toegangspoort en de buurt van de rivier. In de eeuwen na de verovering door de Katholieke Koningen werden hier feesten gehouden, markten georganiseerd en ook publieke straffen uitgevoerd. Wat vandaag als een ontspannen stadsplein voelt, was vroeger letterlijk een toneel waarop het gezag zich liet zien. Kijk naar de gevels en de monumentale fontein: ze zijn geen venster op één tijdperk, maar op opeenvolgende pogingen om een stad opnieuw vorm te geven.",
+    "optional": false
+  },
+  {
+    "id": "02",
+    "day": "17",
+    "name": "Alcaicería",
+    "lat": 37.17563,
+    "lng": -3.59858,
+    "title": "De zijderijkdom van Granada",
+    "story": "De smalle winkelstraten lijken op een souk, maar wat je ziet is niet meer het oorspronkelijke middeleeuwse complex. De Alcaicería was het ommuurde handelsgebied voor kostbare zijde. Handelaren verkochten hier producten uit een economie die verbonden was met de ambachten en de irrigatielandschappen van het koninkrijk Granada. Een grote brand in de negentiende eeuw verwoestte het oude marktgebied. De huidige bebouwing is dus deels een reconstructie van een verloren wereld. Dat maakt de plek interessanter: je kijkt niet alleen naar islamitisch erfgoed, maar ook naar hoe de negentiende eeuw vond dat islamitisch Granada eruit moest zien.",
+    "optional": false
+  },
+  {
+    "id": "03",
+    "day": "17",
+    "name": "Corral del Carbón",
+    "lat": 37.17535,
+    "lng": -3.598,
+    "title": "De middeleeuwse herberg voor handelaren",
+    "story": "Loop door de monumentale toegangspoort en kijk naar de binnenplaats. Dit gebouw uit de Nasridische tijd was een funduq: een plek waar reizende kooplieden konden overnachten en hun handelswaar opslaan. Stel je de geluiden voor van muilezels, goederen, onderhandelingen en vreemde talen. De naam 'kolenhof' kwam later, toen het complex een andere economische functie kreeg. Dat het gebouw is blijven bestaan, is opvallend: veel gewone handelsarchitectuur verdween. Het is een zeldzaam tastbaar spoor van het zakelijke dagelijkse leven van islamitisch Granada, veel minder vorstelijk dan het Alhambra.",
+    "optional": false
+  },
+  {
+    "id": "04",
+    "day": "17",
+    "name": "Kathedraal",
+    "lat": 37.17612,
+    "lng": -3.59903,
+    "title": "Een overwinningssymbool in steen",
+    "story": "Na 1492 moest Granada het gezicht krijgen van een christelijke koningsstad. De kathedraal verrees op de plek van de vroegere hoofdmoskee en werd een ambitieus Renaissanceproject. De schaal is bewust overweldigend: waar het straatweefsel smal en intiem is, rijst ineens een enorm religieus gebouw op. Kijk vooral naar de overgang tussen de oudere stad eromheen en deze nieuwe monumentale orde. De architectuur vertelt daarmee ook een verhaal over macht en identiteit. Voor een bezoek binnen gelden openingstijden en meestal een toegangsbewijs.",
+    "optional": false
+  },
+  {
+    "id": "05",
+    "day": "17",
+    "name": "Capilla Real",
+    "lat": 37.17628,
+    "lng": -3.59967,
+    "title": "De laatste rustplaats van de veroveraars",
+    "story": "Hier liggen Isabella van Castilië en Ferdinand van Aragón begraven, de vorsten onder wie Granada in 1492 werd veroverd. Dat jaar betekende tegelijk het einde van het Nasridische koninkrijk en het begin van een ingrijpende herordening van religie en samenleving. Het grafmonument presenteert de monarchen als eeuwige overwinnaars, maar buiten het gebouw was de werkelijkheid minder eenvoudig. Voor moslims en joden begon een periode van gedwongen keuzes, bekering en uiteindelijk verdrijving. Lees dit monument daarom niet alleen als koninklijke pracht, maar ook als het begin van een pijnlijk hoofdstuk.",
+    "optional": false
+  },
+  {
+    "id": "06",
+    "day": "17",
+    "name": "Madraza",
+    "lat": 37.17626,
+    "lng": -3.59845,
+    "title": "Waar kennis werd georganiseerd",
+    "story": "In 1349 liet sultan Yusuf I hier een islamitische onderwijsinstelling bouwen. Studenten bestudeerden onder meer recht en theologie, in een stad waar boeken, geleerdheid en hofcultuur een hoge status hadden. Na de christelijke verovering veranderde het gebouw van functie en werd het onder andere bestuurlijk gebruikt. Van het oorspronkelijke complex bleef slechts een deel behouden, waaronder een bijzonder rijk versierde ruimte. De locatie laat mooi zien hoe gebouwen van betekenis kunnen veranderen terwijl dezelfde muren, soms verborgen, voortleven.",
+    "optional": false
+  },
+  {
+    "id": "07",
+    "day": "17",
+    "name": "Plaza Nueva",
+    "lat": 37.17827,
+    "lng": -3.5946,
+    "title": "De overgang tussen twee Granada's",
+    "story": "Ondanks de naam is Plaza Nueva een van de oudste pleinen uit de christelijke stad. Het ligt op een strategische plek waar het commerciële centrum overgaat in het kronkelende rivierlandschap richting het Alhambra en Albaicín. Kijk in drie richtingen: naar de brede stedelijke ruimte, naar de stijgende heuvels en naar het begin van de Carrera del Darro. Granada bestaat uit meerdere lagen die hier letterlijk bij elkaar komen. Vanaf dit plein kun je morgen omhoog naar het Alhambra, of de rivier volgen naar de witte huizen van het Albaicín.",
+    "optional": false
+  },
+  {
+    "id": "08",
+    "day": "18",
+    "name": "Puerta de las Granadas",
+    "lat": 37.17526,
+    "lng": -3.59205,
+    "title": "De theatrale toegang tot het paleis",
+    "story": "Deze renaissancepoort werd aangelegd in de zestiende eeuw, toen het Alhambra al was veranderd van islamitisch machtscentrum in een koninklijk bezit van de nieuwe machthebbers. De naam verwijst naar de stenen granaatappels, een bekend symbool van de stad. De poort markeert ook een slimme verandering van ritme: plotseling verdwijnen winkels en druk verkeer en begint de beboste helling. Een monumentale toegangspoort maakt van een gewone wandeling een kleine processie naar een plek van macht.",
+    "optional": false
+  },
+  {
+    "id": "09",
+    "day": "18",
+    "name": "Bosque de la Alhambra",
+    "lat": 37.17496,
+    "lng": -3.58944,
+    "title": "De heuvel als ontworpen decor",
+    "story": "De koelte van het bos is welkom tijdens de klim. Bedenk wel dat dit geen ongerepte wildernis is: paden, beplanting en waterlopen zijn door de eeuwen heen gevormd en opnieuw aangelegd. Het Alhambra was nooit alleen een rij paleizen boven op een rots. Water aanvoeren, hellingen beheersen en schaduw creëren waren essentiële onderdelen van het systeem. Luister naar stromend water als je het tegenkomt. De ingenieurskunst achter deze groene omgeving is minstens zo fascinerend als het stucwerk waarvoor toeristen naar boven komen.",
+    "optional": false
+  },
+  {
+    "id": "10",
+    "day": "18",
+    "name": "Puerta de la Justicia",
+    "lat": 37.17573,
+    "lng": -3.58914,
+    "title": "Een poort die macht vertraagt",
+    "story": "Deze indrukwekkende veertiende-eeuwse stadspoort hoorde bij de verdediging van het Alhambra. De gebogen doorgang maakte het voor aanvallers lastiger om in één rechte beweging binnen te dringen. Boven de poort zijn symbolen te vinden die door generaties verschillend zijn uitgelegd. De beroemde hand en sleutel worden vaak verbonden aan bescherming en religieuze betekenis, maar hun precieze uitleg is onderwerp van discussie. Kijk vooral naar de constructie: een toegang is hier niet simpelweg een gat in een muur, maar een zorgvuldig geregisseerde overgang van buiten naar binnen.",
+    "optional": false
+  },
+  {
+    "id": "11",
+    "day": "18",
+    "name": "Alcazaba",
+    "lat": 37.17669,
+    "lng": -3.59077,
+    "title": "De militaire kern van het Alhambra",
+    "story": "Voordat de Nasridische paleizen hun verfijnde zalen kregen, was deze heuvel al een verdedigbare positie. De Alcazaba met haar wachttorens benadrukt de militaire functie van het Alhambra. Vanaf hoge punten zie je hoe strategisch de plek is: de stad beneden, de valleien rondom en de verre bergketens. Maar een fort moet meer kunnen dan imponeren. Er waren woonruimten, voorzieningen en mensen die hier jarenlang werkten. Voor de binnenruimten van de Alcazaba heb je doorgaans een passend Alhambra-ticket nodig.",
+    "optional": false
+  },
+  {
+    "id": "12",
+    "day": "18",
+    "name": "Palacio de Carlos V",
+    "lat": 37.17658,
+    "lng": -3.58873,
+    "title": "Een keizer midden in een islamitische vesting",
+    "story": "Het grote renaissancepaleis lijkt in zijn omgeving bijna buitenaards: een strak gebouw met een ronde binnenhof, midden tussen de oudere Nasridische structuren. Keizer Karel V wilde hiermee zijn aanwezigheid zichtbaar maken in het voormalige islamitische machtscentrum. Architectuur werd een manier om politieke continuïteit én een breuk te tonen. Loop, wanneer toegankelijk, de ronde hof binnen en ervaar hoe de geometrie verandert terwijl je beweegt. Toegang tot het hof is vaak mogelijk zonder het volledige Alhambra-ticket, maar controleer de actuele toegangsregels.",
+    "optional": false
+  },
+  {
+    "id": "13",
+    "day": "18",
+    "name": "Palacios Nazaríes",
+    "lat": 37.17713,
+    "lng": -3.58935,
+    "title": "Macht achter dunne muren",
+    "story": "De Nasridische paleizen zijn beroemd om verfijnd stucwerk, geometrische tegels, kalligrafie en waterbassins. Opvallend genoeg is het indrukwekkende effect vaak gemaakt met relatief kwetsbare materialen, niet met massieve blokken marmer. Licht, reflectie en herhaling waren onderdelen van het ontwerp. De decoraties bevatten ook inscripties die de heersende dynastie bezingen. Hier werd politiek gepresenteerd als schoonheid. Belangrijk: voor de paleizen is een specifiek Alhambra-ticket nodig, doorgaans met een gereserveerd toegangstijdstip. Zonder ticket kun je deze halte als historische uitleg buiten beleven.",
+    "optional": true
+  },
+  {
+    "id": "14",
+    "day": "18",
+    "name": "Generalife",
+    "lat": 37.17762,
+    "lng": -3.5835,
+    "title": "De tuin als techniek van welvaart",
+    "story": "De tuinen en het zomerverblijf van de Nasridische vorsten tonen hoe kostbaar water en rust waren in een warme stad. Waterpartijen, schaduw, beplanting en zichtlijnen waren middelen om een gecontroleerde omgeving te scheppen. Achter het romantische beeld van fonteinen schuilt ingewikkelde watertechniek: kanalen voerden water over grote afstanden en langs de hellingen. Stel je eens voor hoeveel onderhoud dit vergde. Het Generalife was geen toevlucht ver weg van het staatsapparaat, maar ook een uitdrukking van de middelen waarover het hof beschikte. Toegang is ticketafhankelijk.",
+    "optional": true
+  },
+  {
+    "id": "15",
+    "day": "18",
+    "name": "Carmen de los Mártires",
+    "lat": 37.17248,
+    "lng": -3.58597,
+    "title": "De andere tuingeschiedenis van de heuvel",
+    "story": "Op de heuvel bij het Alhambra liggen ook tuinen die een heel ander tijdperk weerspiegelen. Carmen de los Mártires is verbonden met latere christelijke en particuliere geschiedenis en heeft een romantisch landschapskarakter. Het begrip 'carmen' betekent in Granada vaak een huis met besloten tuin, typisch voor de heuvels. Kijk hoe de vegetatie en vergezichten een bijna privéwereld maken, ook vlak bij een van Spanje's drukste monumenten. Toegang en openingstijden van de tuinen kunnen wisselen; deze halte is daarom een mooie optie, geen noodzakelijke toegang tot het Alhambra.",
+    "optional": true
+  },
+  {
+    "id": "16",
+    "day": "18",
+    "name": "Campo del Príncipe",
+    "lat": 37.17234,
+    "lng": -3.59406,
+    "title": "Het Realejo buiten de paleizen",
+    "story": "Het Realejo was historisch een wijk met een belangrijke joodse bevolking voordat de stad in 1492 van machthebbers wisselde. Vandaag staat Campo del Príncipe vol terrassen en buurtverkeer. Dat contrast is waardevol: Granada is veel meer dan een reeks koninklijke monumenten. Na de verovering kreeg de buurt nieuwe bewoners en functies, terwijl delen van het stratenpatroon bleven bestaan. Neem hier rustig de tijd. Na de lange klim en afdaling is dit een logische plek om de monumentale verhalen weer terug te brengen naar het dagelijks leven van de stad.",
+    "optional": false
+  },
+  {
+    "id": "17",
+    "day": "19",
+    "name": "Carrera del Darro",
+    "lat": 37.17865,
+    "lng": -3.5915,
+    "title": "Een rivierstraat onder de paleizen",
+    "story": "Langs de smalle Darro zie je Granada op haar meest theatrale manier: bruggetjes, oude gevels en de beboste Alhambraheuvel boven je. Het is verleidelijk om de straat als tijdloos middeleeuws decor te zien. Maar het rivierbed, de huizen en de looproutes zijn voortdurend aangepast. Het water was een bron van energie, transport en problemen. Historische stadsontwikkeling draait vaak niet om monumenten maar om de vraag hoe een gemeenschap met water en terrein omgaat. Kijk naar de hoogteverschillen tussen de straat, de rivier en de vesting.",
+    "optional": false
+  },
+  {
+    "id": "18",
+    "day": "19",
+    "name": "El Bañuelo",
+    "lat": 37.17947,
+    "lng": -3.59,
+    "title": "Waarom een badhuis veel meer was dan hygiëne",
+    "story": "El Bañuelo is een van de bekendste overgebleven Arabische badhuizen van Granada. Een hammam was een praktische voorziening voor wassen en reiniging, maar ook een sociale plaats waar nieuws en gesprekken circuleerden. De ruimte werkte met verschillende temperaturen en doordachte watervoorziening. Het monument herinnert eraan dat islamitisch stedelijk leven niet alleen werd gevormd door sultans, moskeeën en paleizen. Publieke voorzieningen vertelden minstens zoveel over een samenleving. Een bezoek aan het interieur is afhankelijk van de actuele toegangsregeling.",
+    "optional": false
+  },
+  {
+    "id": "19",
+    "day": "19",
+    "name": "Paseo de los Tristes",
+    "lat": 37.17897,
+    "lng": -3.58526,
+    "title": "Een vrolijk plein met een treurige naam",
+    "story": "De bijnaam 'Wandeling van de Treurigen' komt van begrafenisstoeten die vroeger langs deze route naar de begraafplaats liepen. Tegenwoordig is het juist een populaire plaats om op een terras te zitten met uitzicht op de Alhambraheuvel. Daarmee vertelt de naam een mooi verhaal over stedelijk geheugen: een functie kan verdwijnen, terwijl de woorden blijven. Kijk omhoog naar de vesting en draai je dan om naar de smalle straatjes. Het verschil tussen het paleis op de heuvel en het gewone leven aan de rivier is nergens duidelijker.",
+    "optional": false
+  },
+  {
+    "id": "20",
+    "day": "19",
+    "name": "Casa del Chapiz",
+    "lat": 37.18192,
+    "lng": -3.58395,
+    "title": "Woonhuizen na de machtsovername",
+    "story": "Hier staan historische huizen die de overgang tussen laat-islamitisch Granada en de periode na 1492 weerspiegelen. De combinatie van binnenhoven, tuinen en uitzicht laat zien hoe bewoners privacy en klimaatbeheersing in hun architectuur verwerkten. Na de verovering veranderden eigenaren, maatschappelijke verhoudingen en soms ook de inrichting, maar bouwwijzen verdwenen niet van de ene op de andere dag. Vanaf deze omgeving begrijp je ook de ligging van Albaicín en Sacromonte. Het is een goede plek om te kiezen of je nog een extra uitstap omhoog wilt maken.",
+    "optional": false
+  },
+  {
+    "id": "21",
+    "day": "19",
+    "name": "Sacromonte",
+    "lat": 37.18199,
+    "lng": -3.57896,
+    "title": "Grotten, flamenco en een complex verleden",
+    "story": "Sacromonte staat bekend om grotwoningen en zambra, een dans- en muziektraditie die nauw verbonden is met de Roma-gemeenschap van Granada. Het is belangrijk de buurt niet te reduceren tot een exotisch plaatje voor bezoekers. De geschiedenis gaat ook over armoede, uitsluiting, vindingrijkheid en sterke lokale cultuur. Veel grotten zijn door mensen uitgegraven en aangepast aan het terrein. Wie verder de heuvel op loopt, ziet hoe de stad verandert in een landschap van smalle paden en uitzichten. Deze stop is een extra heen-en-weerwandeling; hij vergt meer klimwerk.",
+    "optional": true
+  },
+  {
+    "id": "22",
+    "day": "19",
+    "name": "Mirador de San Nicolás",
+    "lat": 37.18186,
+    "lng": -3.59205,
+    "title": "Waarom juist dit uitzicht beroemd werd",
+    "story": "Vanaf deze mirador lijkt het Alhambra bijna tegenover je te zweven, met de Sierra Nevada in de verte. De aanblik is beroemd, maar kijk ook naar de huizen rondom je. Het Albaicín ontwikkelde zich op een heuvel met smalle straatjes, waterleidingen en compacte woonstructuren. Veel bezoekers komen hier alleen voor de foto, terwijl de wijk zelf minstens zo interessant is. Let op hoe de vesting als één geheel zichtbaar wordt, terwijl je boven in het Alhambra juist losse gebouwen en binnenplaatsen ervaart. Het beste licht voor fotografie verschilt per moment van de dag.",
+    "optional": false
+  },
+  {
+    "id": "23",
+    "day": "19",
+    "name": "Plaza Larga",
+    "lat": 37.18326,
+    "lng": -3.5924,
+    "title": "Een buurtplein dat nog echt wordt gebruikt",
+    "story": "Plaza Larga is een van de plekken waar Albaicín minder als uitzichtpunt en meer als woonwijk voelt. De omgeving bevat winkels, cafés en verbindingen naar oude stadspoorten. Het dagelijkse ritme laat zien dat een UNESCO-erkende historische wijk niet alleen een museum is. Voor bewoners kunnen toeristische drukte, steile straten en onderhoud van oude woningen heel praktische kwesties zijn. Neem hier even afstand van de monumenten en kijk naar wat nodig is om een oude buurt levend te houden.",
+    "optional": false
+  },
+  {
+    "id": "24",
+    "day": "19",
+    "name": "Puerta de Elvira",
+    "lat": 37.18042,
+    "lng": -3.6013,
+    "title": "De stadspoort die zijn stad verloor",
+    "story": "Deze monumentale poort was ooit onderdeel van de toegang tot islamitisch Granada. De vorm die je nu ziet is het resultaat van verbouwingen en restauraties; de stadsmuren waarvan hij deel uitmaakte zijn grotendeels verdwenen. Hierdoor lijkt een poort soms merkwaardig alleen in de moderne stad te staan. Probeer het tegenovergestelde voor te stellen: een reeks muren, controlepunten en routes die bepaalden waar mensen en goederen de stad binnenkwamen. Vanuit dit punt wandel je weer het lagere, drukkere stadscentrum in.",
+    "optional": false
+  },
+  {
+    "id": "25",
+    "day": "20",
+    "name": "Basílica de San Juan de Dios",
+    "lat": 37.18142,
+    "lng": -3.60182,
+    "title": "Barok als overweldigende ervaring",
+    "story": "De rijk versierde kerk is verbonden met Johannes de Deo, bekend om zijn zorg voor zieken en armen in de zestiende eeuw. In Granada werd die traditie onderdeel van een religieuze cultuur die ook zichtbaar wilde imponeren. Vooral het interieur laat zien hoe barokarchitectuur werkt met goud, licht en opeenstapeling. Het contrast met de Nasridische geometrie van het Alhambra is fascinerend: twee heel verschillende manieren om bezoekers te laten voelen dat ze een bijzondere ruimte binnengaan. Dit is een optionele korte stop voor vertrek; toegang kan beperkt of betaald zijn.",
+    "optional": true
+  },
+  {
+    "id": "26",
+    "day": "20",
+    "name": "Monasterio de San Jerónimo",
+    "lat": 37.17932,
+    "lng": -3.60276,
+    "title": "Een klooster voor de nieuwe machthebbers",
+    "story": "Dit klooster werd kort na de verovering van Granada gesticht en is nauw verbonden met de nieuwe christelijke orde van de stad. Het complex is beroemd om zijn renaissancistische architectuur en rijk versierde kerk. Waar het Alhambra eeuwenlang een islamitisch hof vertegenwoordigde, bouwden religieuze instellingen hier aan een nieuw stedelijk zelfbeeld. De kloosterhof brengt een heel ander tempo in de wandeling. Gebruik dit als extra halte wanneer je op de vertrekdag nog tijd hebt; openingstijden en toegangsvoorwaarden kunnen wisselen.",
+    "optional": true
+  }
+]

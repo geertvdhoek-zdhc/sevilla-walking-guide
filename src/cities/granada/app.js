@@ -1,8 +1,8 @@
 (()=>{
 'use strict';
-const routes=window.GRANADA_ROUTES||[];
+let routes=[];
 const $=id=>document.getElementById(id);
-if(!routes.length||!window.L){$('peekName').textContent='Kaart niet beschikbaar';return}
+if(!window.L){$('peekName').textContent='Kaart niet beschikbaar';return}
 const map=L.map('map',{zoomControl:false,preferCanvas:true}).setView([37.178,-3.593],14);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
  maxZoom:19,attribution:'© OpenStreetMap-bijdragers'
@@ -110,5 +110,29 @@ $('locate').addEventListener('click',()=>{
  },{enableHighAccuracy:true,maximumAge:10000,timeout:20000});
 });
 window.addEventListener('resize',()=>map.invalidateSize({pan:false}));
-setRoute($('route').value);
+const routeDetails={
+  '17':{label:'Zaterdag 17 oktober · Centrum',duration:'Eerste middag · grotendeels vlak',intro:'Markten, zijdemarkt, kathedraal en de monumenten van het centrum. Je kunt onderweg stoppen wanneer je wilt.'},
+  '18':{label:'Zondag 18 oktober · Alhambra',duration:'Heuvelachtig · veel klimmen',intro:'Van de stadspoorten naar het Alhambra en door het Realejo. Alcazaba, Nasridische paleizen en Generalife vereisen een geldig ticket; de Nasridische paleizen hebben een tijdslot.'},
+  '19':{label:'Maandag 19 oktober · Albaicín',duration:'Steile stegen · Sacromonte optioneel',intro:'Langs de rivier, omhoog door het Albaicín en naar de grotwoningen en de uitzichtpunten. Sacromonte is een langere optionele omweg.'},
+  '20':{label:'Dinsdag 20 oktober · Extra',duration:'Kort en optioneel',intro:'Twee extra stops als je vóór vertrek tijd hebt. Kijk naar openingstijden als je naar binnen wilt.'}
+};
+fetch('./stops.json?v=granada-2',{cache:'no-store'})
+ .then(response=>{if(!response.ok)throw Error('HTTP '+response.status);return response.json()})
+ .then(data=>{
+   if(!Array.isArray(data)||!data.length)throw Error('Geen haltes gevonden');
+   routes=Object.entries(routeDetails).map(([id,info])=>({
+     id,label:info.label,duration:info.duration,intro:info.intro,
+     stops:data.filter(s=>s.day===id).map(s=>({
+       name:s.name,lat:Number(s.lat),lng:Number(s.lng),
+       kicker:s.title||'',story:s.story||'',tip:s.tip||(s.optional?'Optionele halte.':'')
+     }))
+   }));
+   if(routes.some(r=>!r.stops.length))throw Error('Een wandeling is leeg');
+   setRoute($('route').value);
+ })
+ .catch(error=>{
+   $('peekName').textContent='Gids kan niet laden';
+   $('stopName').textContent='Verhalen niet beschikbaar';
+   $('story').textContent='Probeer opnieuw met internet. '+error.message;
+ });
 })();

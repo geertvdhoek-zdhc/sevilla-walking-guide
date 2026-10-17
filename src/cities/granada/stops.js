@@ -20,8 +20,8 @@ window.GRANADA_ROUTES = [
       },
       {
         "name": "Alcaicería",
-        "lat": 37.17526,
-        "lng": -3.59855,
+        "lat": 37.17536,
+        "lng": -3.59919,
         "kicker": "De oude zijdemarkt",
         "story": "Je staat in een klein labyrint van winkels. In de Nasridische tijd en nog lang daarna lag hier het handelsgebied voor kostbare stoffen, met zijde als een van de belangrijkste producten. Granada had toegang tot internationale handelsnetwerken: een lap stof kon de reis maken via vele tussenpersonen en wisselende politieke grenzen.\n\nDe tegenwoordige winkeltjes zijn grotendeels het resultaat van negentiende-eeuwse herbouw. Een verwoestende brand in 1843 maakte een einde aan veel van de oorspronkelijke markt. Het is dus verleidelijk, maar onjuist, om iedere boog die je ziet als middeleeuws te beschouwen.\n\nJuist dat verschil is interessant. De naam en het stratenpatroon verwijzen naar de oude markt, maar de gebouwen laten zien hoe toerisme en herinnering een historische plek opnieuw vormgeven. Het verleden is hier geen stilstaand decor.",
         "tip": "Let op de nauwe steegjes: een overdekt handelsgebied is ontworpen voor voetgangers en beschutte handel, niet voor grote pleinen."
@@ -77,8 +77,88 @@ window.GRANADA_ROUTES = [
     ]
   },
   {
+    "id": "alhambra",
+    "label": "18 okt · Alhambra & Realejo",
+    "duration": "4–6 uur inclusief bezoek; stevige klim en afdaling",
+    "intro": "Plan de volgorde van de paleizen rond het exacte tijdslot op je Alhambra-ticket. Zonder ticket kun je de buitenstops, het paleis van Karel V (vrije toegangsgebieden) en Realejo bezoeken. De wandeling bevat een lange afdaling.",
+    "stops": [
+      {
+        "name": "Puerta de las Granadas",
+        "lat": 37.17602,
+        "lng": -3.5931,
+        "kicker": "Een keizerlijke toegang tot een andere wereld",
+        "story": "De weg omhoog naar de Alhambra begint met een opvallende renaissancepoort. De Puerta de las Granadas dateert uit de zestiende eeuw, toen de nieuwe machthebbers het oude paleiscomplex een plaats in hun eigen koninklijke wereld wilden geven.\n\nAchter de poort verandert het landschap direct. De drukte van Granada maakt plaats voor schaduw, bomen en een klim. De toegang zelf is een deel van de ervaring: wie hoger komt, gaat van een dichtbebouwde stad naar een afgezonderde vesting. Dat was voor vroegere bezoekers niet alleen mooi, maar ook een manier om macht voelbaar te maken.\n\nKijk nog één keer achterom voordat je verderloopt. Vanaf beneden lijkt de Alhambra een monument op een berg; lopend omhoog merk je hoeveel infrastructuur nodig was om er ooit een complete hofgemeenschap te laten functioneren.",
+        "tip": "Buitenhalte zonder ticket. Hier begint de klim. Neem water mee en kies een rustig tempo."
+      },
+      {
+        "name": "Puerta de la Justicia",
+        "lat": 37.1761,
+        "lng": -3.59029,
+        "kicker": "Een poort die je dwingt te vertragen",
+        "story": "Deze imposante poort werd in de veertiende eeuw onder sultan Yusuf I gebouwd. De doorgang hoort bij de vestingwerken van de Alhambra. Een middeleeuwse poort was veel meer dan een opening: de route, bochten en bewaking hielpen ongewenste bezoekers tegen te houden.\n\nWat vandaag een fotogenieke toegang lijkt, was ooit een praktische machtsmachine. De architectuur controleerde je lichaam. Je moest vertragen, de richting van de doorgang volgen en was duidelijk zichtbaar voor wie de poort bewaakte. Dat maakt deze halte een goede introductie tot de Alhambra als complete versterkte stad, niet slechts als verzameling sierlijke paleiskamers.\n\nDe symbolen en inscripties rondom de toegang kregen in verschillende tijden nieuwe uitleg. Granada heeft de bijzondere gewoonte om oudere gebouwen steeds opnieuw van betekenis te voorzien.",
+        "tip": "De poort is van buiten te zien. Voor de betaalde delen van het complex volgen aparte toegangseisen."
+      },
+      {
+        "name": "Alcazaba",
+        "lat": 37.17711,
+        "lng": -3.59181,
+        "kicker": "De vesting vóór de verfijnde paleizen",
+        "story": "De Alcazaba is de militaire kern van de Alhambra. Met haar torens en verdedigingsmuren herinnert ze eraan dat de heersers van Granada eerst en vooral een veilige machtsbasis nodig hadden. De schoonheid van de hofpaleizen was mogelijk doordat het complex ook bewaakt, onderhouden en bevoorraad werd.\n\nVanaf de torens kun je zowel de benedenstad als de bergen zien. Vergelijk de woonstraten in Albaicín met de versterkte heuvel waarop je nu staat. Zo wordt de strategische ligging onmiddellijk duidelijk. De Alhambra bestond uit meer dan koninklijke appartementen: er waren soldaten, ambachtslieden, arbeiders, opslagplaatsen en dagelijkse routines.\n\nWie de Alcazaba overslaat, loopt het risico het complex alleen als een luxe tuin te zien. De vesting vertelt waarom die luxe hier überhaupt mogelijk was.",
+        "tip": "Ticket vereist. Als je geen toegang hebt, bekijk dan de vestingmuren van buiten en ga verder."
+      },
+      {
+        "name": "Palacio de Carlos V",
+        "lat": 37.17683,
+        "lng": -3.58995,
+        "kicker": "Waarom een ronde binnenplaats revolutionair was",
+        "story": "De gevel van het paleis van Karel V lijkt niet op de islamitische paleizen eromheen. Het renaissancegebouw is vierkant van buiten, met een spectaculaire ronde binnenhof. Dat was een bewuste keuze voor een andere architectonische taal.\n\nNa de Castiliaanse verovering bleef de Alhambra politiek belangrijk. Karel V wilde er een eigen representatieve residentie laten bouwen. Daardoor toont het complex twee vormen van machtsvertoon pal naast elkaar: verfijnde binnenhoven met water, kalligrafie en ornamenten, en een monumentale stenen compositie met klassieke verhoudingen.\n\nLet op de schaal van de binnenplaats. Hier maakt een keizerlijke staat zichzelf zichtbaar met symmetrie en geometrie. Het gebouw werd niet in één korte bouwperiode voltooid. Ook hier duurde het generaties voordat de ambities van de opdrachtgevers een tastbare vorm kregen.",
+        "tip": "De binnenplaats en bepaalde ruimten zijn volgens de officiële Alhambra-informatie gratis toegankelijk; check ter plaatse de toegang."
+      },
+      {
+        "name": "Palacios Nazaríes",
+        "lat": 37.177075,
+        "lng": -3.59004,
+        "kicker": "Macht weerspiegeld in water",
+        "story": "De Nasridische paleizen maken indruk met verhoudingen, licht, stucwerk, kalligrafie en water. De details zijn geen losse versiering. De paleisarchitectuur verweeft poëzie, hofrituelen en dynastieke macht met ruimtes die tegelijk beschut en indrukwekkend moesten zijn.\n\nDe gebouwen zijn niet in één keer ontworpen. Verschillende heersers lieten delen aanleggen en aanpassen. Toch voelt het geheel opvallend samenhangend doordat dezelfde principes terugkeren: ritme in de bogen, kleine ruimtelijke overgangen, reflecties in waterbekkens en een zorgvuldig spel tussen gesloten en open ruimtes.\n\nProbeer binnen één element te kiezen en het echt te bestuderen: een plafond, een inscriptie of de weerspiegeling van een gevel. Daarmee zie je vaak meer dan wanneer je zo snel mogelijk alle beroemde foto's probeert te maken. Hier kun je de technische en culturele verfijning van het Nasridische hof bijna aanraken.",
+        "tip": "De pin wijst naar de ingang bij het Mexuar, niet naar het midden van het paleiscomplex. Zorg dat je op tijd bij de ingang bent: ticket én exact tijdslot zijn verplicht."
+      },
+      {
+        "name": "El Partal",
+        "lat": 37.17738,
+        "lng": -3.5886,
+        "kicker": "Wanneer een tuin een spiegel wordt",
+        "story": "In het Partal-gebied zie je de relatie tussen landschap, architectuur en water op een andere manier. Vijvers en terrassen maken de heuvel onderdeel van de compositie. Een wateroppervlak vergroot optisch de ruimte en laat gebouw en lucht in elkaar overlopen.\n\nMaar water was op deze hoogte beslist niet vanzelfsprekend. Er was een netwerk van kanalen en voorzieningen nodig om het naar de tuinen en paleizen te brengen. Achter de beroemde schoonheid zat dus een uitgebreid technisch en organisatorisch systeem.\n\nKijk van dichtbij naar de maat van de ruimtes en daarna naar het uitzicht over de stad. De architectuur lijkt soms klein en intiem vergeleken met de keizerlijke bouwwerken, maar juist de opeenvolging van ruimten maakt haar indrukwekkend. Granada laat hier zien dat verfijning niet altijd samenvalt met omvang.",
+        "tip": "Onderdeel van het monumentale bezoek; toegang afhankelijk van je Alhambra-ticket."
+      },
+      {
+        "name": "Generalife",
+        "lat": 37.17792,
+        "lng": -3.58534,
+        "kicker": "Een paradijstuin heeft ingenieurs nodig",
+        "story": "De Generalife was nauw verbonden met het hof van Granada en wordt vaak het zomerverblijf van de Nasridische heersers genoemd. De tuinen voelen rustig aan, maar de serene aanblik was het resultaat van ingewikkeld beheer. Op deze heuvel moest water worden aangevoerd, verdeeld en onderhouden.\n\nIn een warm en droog klimaat was koel stromend water een sterk symbool van prestige. Het was ook een technische prestatie. De tuinen die je nu ziet zijn bovendien door de eeuwen heen aangepast. Het is dus beter ze te begrijpen als een levende historische plek dan als een onaangeroerd beeld uit de veertiende eeuw.\n\nLet op hoe geluid verandert wanneer je dichter bij het water komt. De combinatie van stroming, geur, schaduw en besloten ruimtes was zelf een vorm van architectuur: een beleving die verder ging dan stenen muren.",
+        "tip": "Onderdeel van de algemene Alhambra-route met het juiste ticket. Reken tijd voor de tuinen en de langere wandeling."
+      },
+      {
+        "name": "Campo del Príncipe",
+        "lat": 37.17302,
+        "lng": -3.59208,
+        "kicker": "Terug naar de stad van gewone mensen",
+        "story": "De afdaling naar Realejo is een overgang van koninklijke grandeur naar een woonwijk met kleine straten en pleinen. Realejo staat bekend als de voormalige Joodse wijk van Granada, al veranderde de bevolking en bebouwing na de verovering sterk.\n\nCampo del Príncipe laat zien hoe het leven in de benedenstad doorging. Pleinen dienden als ontmoetingsruimte, markt, speelplek en decor voor religieuze tradities. Hun betekenis werd telkens opnieuw gevormd door de mensen die er woonden.\n\nNa de symmetrie van paleistuinen is dit een ander soort stedelijke schoonheid: niet ontworpen om een sultan of keizer te imponeren, maar gegroeid uit dagelijkse behoeften. Kijk naar de huizen, cafés en straten rondom het plein. Ook dit is Granada, en misschien wel het deel dat het meest op een normale stad lijkt.",
+        "tip": "De afdaling vanaf de Alhambra is lang. Gebruik vervoer als je deze combinatie te zwaar vindt."
+      },
+      {
+        "name": "Casa de los Tiros",
+        "lat": 37.17475,
+        "lng": -3.59553,
+        "kicker": "Een gevel als visitekaartje van de elite",
+        "story": "Dit historische stadspaleis heeft een stevige gevel, alsof het gebouw zich nog steeds moet verdedigen. Casa de los Tiros laat zien hoe de elites die na de verovering een belangrijke positie kregen zichzelf in steen presenteerden.\n\nHet huis verbindt twee kanten van Granada: de oude straatstructuur en de nieuwe machtsverhoudingen. Wat nu een museum of monument is, was ooit onderdeel van een echte woon- en machtsomgeving. Families wilden hun rijkdom tonen, maar ook hun plek in de stedelijke hiërarchie veiligstellen.\n\nDe wijk Realejo heeft meerdere identiteiten gekend en is nooit een onveranderlijke historische enclave geweest. Daarmee is dit een passend eindpunt voor je wandeling. Granada werd telkens opnieuw gebouwd, geïnterpreteerd en gebruikt. De beroemdste paleizen zijn slechts een van de vele hoofdstukken.",
+        "tip": "Eindpunt op korte loopafstand van Plaza Nueva en de centrale straten."
+      }
+    ]
+  },
+  {
     "id": "albaicin",
-    "label": "18 okt · Albaicín & Sacromonte",
+    "label": "19 okt · Albaicín & Sacromonte",
     "duration": "3–5 uur met heuvels en pauzes",
     "intro": "Begin beneden bij de rivier de Darro en klim door de oude woonwijk naar de uitzichten op de Alhambra. De omweg naar Sacromonte is optioneel; er zijn steile stukken en ongelijke bestrating.",
     "stops": [
@@ -123,12 +203,12 @@ window.GRANADA_ROUTES = [
         "tip": "Bekijk de buitenkant en de ligging op het kruispunt. Binnenbezoek is afhankelijk van openingstijden en toegang."
       },
       {
-        "name": "Camino del Sacromonte",
-        "lat": 37.18205,
-        "lng": -3.58408,
+        "name": "Camino del Sacromonte (grotwoningen)",
+        "lat": 37.18142,
+        "lng": -3.58486,
         "kicker": "Grotwoningen zijn echte huizen",
         "story": "Sacromonte is beroemd om flamenco en grotwoningen. Maar wie de wijk alleen als avondvoorstelling bekijkt, mist het wezenlijke. De grotwoningen ontstonden door de hellingen uit te graven en ruimtes te maken die relatief beschut zijn tegen zomerse hitte en winterkou. Ze waren niet uitsluitend curiositeiten, maar werkelijke woonomgevingen.\n\nDe wijk is nauw verbonden met de gitano-gemeenschappen van Granada en met de zambra, een lokale muziek- en danstraditie. Toerisme heeft veel zichtbaar gemaakt, maar ook een deel van de geschiedenis geromantiseerd. Kijk daarom naar de paden, muurtjes, de gewone huizen en de afstanden tot de benedenstad.\n\nHier komen sociale geschiedenis, landschap en cultuur samen. Je hoeft geen voorstelling te bezoeken om de betekenis van de plek te voelen; de inrichting van de wijk zelf vertelt al een groot verhaal.",
-        "tip": "Dit is een extra heen-en-teruglus. Laat hem weg als de wandeling te lang wordt; vanaf Casa del Chapiz kun je rechtstreeks verder omhoog."
+        "tip": "Dit punt ligt op het Camino del Sacromonte zelf, niet bij de hoger gelegen grotten van het museum. Dit is een optionele heen-en-teruglus; sla hem over als de wandeling te lang wordt."
       },
       {
         "name": "Mirador de San Nicolás",
@@ -153,86 +233,6 @@ window.GRANADA_ROUTES = [
         "kicker": "Een poort waar geen muur meer omheen staat",
         "story": "Puerta de Elvira hoorde bij het middeleeuwse verdedigingssysteem van Granada. Reizigers en kooplieden kwamen hier de stad binnen. Er werd bepaald wie kon passeren en hoe goederen zich naar de markten bewogen. Zo waren stadspoorten tegelijk militaire, economische en bestuurlijke plekken.\n\nTegenwoordig zie je een poort die grotendeels losstaat van de verdwenen stadsmuren. Dat maakt haar bijna raadselachtig: waarom staat zo'n groot bouwsel nu tussen moderne straten? De vraag zelf toont hoe steden veranderen. Wat ooit een essentiële grens was, werd later een verkeershindernis of een monument.\n\nJe hebt vandaag een rivierdal, badhuis, verborgen woningen, een woonwijk op een heuvel en een beroemd uitzicht gezien. Deze poort sluit de wandeling af met één gedachte: Granada is niet alleen wat er bewaard bleef, maar ook wat er onderweg verdween.",
         "tip": "Eindpunt bij de benedenstad. Vanaf hier vind je cafés, bussen en de route terug naar het centrum."
-      }
-    ]
-  },
-  {
-    "id": "alhambra",
-    "label": "19 okt · Alhambra & Realejo",
-    "duration": "4–6 uur inclusief bezoek; stevige klim en afdaling",
-    "intro": "Plan de volgorde van de paleizen rond het exacte tijdslot op je Alhambra-ticket. Zonder ticket kun je de buitenstops, het paleis van Karel V (vrije toegangsgebieden) en Realejo bezoeken. De wandeling bevat een lange afdaling.",
-    "stops": [
-      {
-        "name": "Puerta de las Granadas",
-        "lat": 37.17602,
-        "lng": -3.5931,
-        "kicker": "Een keizerlijke toegang tot een andere wereld",
-        "story": "De weg omhoog naar de Alhambra begint met een opvallende renaissancepoort. De Puerta de las Granadas dateert uit de zestiende eeuw, toen de nieuwe machthebbers het oude paleiscomplex een plaats in hun eigen koninklijke wereld wilden geven.\n\nAchter de poort verandert het landschap direct. De drukte van Granada maakt plaats voor schaduw, bomen en een klim. De toegang zelf is een deel van de ervaring: wie hoger komt, gaat van een dichtbebouwde stad naar een afgezonderde vesting. Dat was voor vroegere bezoekers niet alleen mooi, maar ook een manier om macht voelbaar te maken.\n\nKijk nog één keer achterom voordat je verderloopt. Vanaf beneden lijkt de Alhambra een monument op een berg; lopend omhoog merk je hoeveel infrastructuur nodig was om er ooit een complete hofgemeenschap te laten functioneren.",
-        "tip": "Buitenhalte zonder ticket. Hier begint de klim. Neem water mee en kies een rustig tempo."
-      },
-      {
-        "name": "Puerta de la Justicia",
-        "lat": 37.1761,
-        "lng": -3.59029,
-        "kicker": "Een poort die je dwingt te vertragen",
-        "story": "Deze imposante poort werd in de veertiende eeuw onder sultan Yusuf I gebouwd. De doorgang hoort bij de vestingwerken van de Alhambra. Een middeleeuwse poort was veel meer dan een opening: de route, bochten en bewaking hielpen ongewenste bezoekers tegen te houden.\n\nWat vandaag een fotogenieke toegang lijkt, was ooit een praktische machtsmachine. De architectuur controleerde je lichaam. Je moest vertragen, de richting van de doorgang volgen en was duidelijk zichtbaar voor wie de poort bewaakte. Dat maakt deze halte een goede introductie tot de Alhambra als complete versterkte stad, niet slechts als verzameling sierlijke paleiskamers.\n\nDe symbolen en inscripties rondom de toegang kregen in verschillende tijden nieuwe uitleg. Granada heeft de bijzondere gewoonte om oudere gebouwen steeds opnieuw van betekenis te voorzien.",
-        "tip": "De poort is van buiten te zien. Voor de betaalde delen van het complex volgen aparte toegangseisen."
-      },
-      {
-        "name": "Alcazaba",
-        "lat": 37.17711,
-        "lng": -3.59181,
-        "kicker": "De vesting vóór de verfijnde paleizen",
-        "story": "De Alcazaba is de militaire kern van de Alhambra. Met haar torens en verdedigingsmuren herinnert ze eraan dat de heersers van Granada eerst en vooral een veilige machtsbasis nodig hadden. De schoonheid van de hofpaleizen was mogelijk doordat het complex ook bewaakt, onderhouden en bevoorraad werd.\n\nVanaf de torens kun je zowel de benedenstad als de bergen zien. Vergelijk de woonstraten in Albaicín met de versterkte heuvel waarop je nu staat. Zo wordt de strategische ligging onmiddellijk duidelijk. De Alhambra bestond uit meer dan koninklijke appartementen: er waren soldaten, ambachtslieden, arbeiders, opslagplaatsen en dagelijkse routines.\n\nWie de Alcazaba overslaat, loopt het risico het complex alleen als een luxe tuin te zien. De vesting vertelt waarom die luxe hier überhaupt mogelijk was.",
-        "tip": "Ticket vereist. Als je geen toegang hebt, bekijk dan de vestingmuren van buiten en ga verder."
-      },
-      {
-        "name": "Palacio de Carlos V",
-        "lat": 37.17683,
-        "lng": -3.58995,
-        "kicker": "Waarom een ronde binnenplaats revolutionair was",
-        "story": "De gevel van het paleis van Karel V lijkt niet op de islamitische paleizen eromheen. Het renaissancegebouw is vierkant van buiten, met een spectaculaire ronde binnenhof. Dat was een bewuste keuze voor een andere architectonische taal.\n\nNa de Castiliaanse verovering bleef de Alhambra politiek belangrijk. Karel V wilde er een eigen representatieve residentie laten bouwen. Daardoor toont het complex twee vormen van machtsvertoon pal naast elkaar: verfijnde binnenhoven met water, kalligrafie en ornamenten, en een monumentale stenen compositie met klassieke verhoudingen.\n\nLet op de schaal van de binnenplaats. Hier maakt een keizerlijke staat zichzelf zichtbaar met symmetrie en geometrie. Het gebouw werd niet in één korte bouwperiode voltooid. Ook hier duurde het generaties voordat de ambities van de opdrachtgevers een tastbare vorm kregen.",
-        "tip": "De binnenplaats en bepaalde ruimten zijn volgens de officiële Alhambra-informatie gratis toegankelijk; check ter plaatse de toegang."
-      },
-      {
-        "name": "Palacios Nazaríes",
-        "lat": 37.17713,
-        "lng": -3.58935,
-        "kicker": "Macht weerspiegeld in water",
-        "story": "De Nasridische paleizen maken indruk met verhoudingen, licht, stucwerk, kalligrafie en water. De details zijn geen losse versiering. De paleisarchitectuur verweeft poëzie, hofrituelen en dynastieke macht met ruimtes die tegelijk beschut en indrukwekkend moesten zijn.\n\nDe gebouwen zijn niet in één keer ontworpen. Verschillende heersers lieten delen aanleggen en aanpassen. Toch voelt het geheel opvallend samenhangend doordat dezelfde principes terugkeren: ritme in de bogen, kleine ruimtelijke overgangen, reflecties in waterbekkens en een zorgvuldig spel tussen gesloten en open ruimtes.\n\nProbeer binnen één element te kiezen en het echt te bestuderen: een plafond, een inscriptie of de weerspiegeling van een gevel. Daarmee zie je vaak meer dan wanneer je zo snel mogelijk alle beroemde foto's probeert te maken. Hier kun je de technische en culturele verfijning van het Nasridische hof bijna aanraken.",
-        "tip": "Let op: ticket én exact tijdslot zijn verplicht voor de Nasridische paleizen. Pas de volgorde van de stops daarop aan."
-      },
-      {
-        "name": "El Partal",
-        "lat": 37.17738,
-        "lng": -3.5886,
-        "kicker": "Wanneer een tuin een spiegel wordt",
-        "story": "In het Partal-gebied zie je de relatie tussen landschap, architectuur en water op een andere manier. Vijvers en terrassen maken de heuvel onderdeel van de compositie. Een wateroppervlak vergroot optisch de ruimte en laat gebouw en lucht in elkaar overlopen.\n\nMaar water was op deze hoogte beslist niet vanzelfsprekend. Er was een netwerk van kanalen en voorzieningen nodig om het naar de tuinen en paleizen te brengen. Achter de beroemde schoonheid zat dus een uitgebreid technisch en organisatorisch systeem.\n\nKijk van dichtbij naar de maat van de ruimtes en daarna naar het uitzicht over de stad. De architectuur lijkt soms klein en intiem vergeleken met de keizerlijke bouwwerken, maar juist de opeenvolging van ruimten maakt haar indrukwekkend. Granada laat hier zien dat verfijning niet altijd samenvalt met omvang.",
-        "tip": "Onderdeel van het monumentale bezoek; toegang afhankelijk van je Alhambra-ticket."
-      },
-      {
-        "name": "Generalife",
-        "lat": 37.17792,
-        "lng": -3.58534,
-        "kicker": "Een paradijstuin heeft ingenieurs nodig",
-        "story": "De Generalife was nauw verbonden met het hof van Granada en wordt vaak het zomerverblijf van de Nasridische heersers genoemd. De tuinen voelen rustig aan, maar de serene aanblik was het resultaat van ingewikkeld beheer. Op deze heuvel moest water worden aangevoerd, verdeeld en onderhouden.\n\nIn een warm en droog klimaat was koel stromend water een sterk symbool van prestige. Het was ook een technische prestatie. De tuinen die je nu ziet zijn bovendien door de eeuwen heen aangepast. Het is dus beter ze te begrijpen als een levende historische plek dan als een onaangeroerd beeld uit de veertiende eeuw.\n\nLet op hoe geluid verandert wanneer je dichter bij het water komt. De combinatie van stroming, geur, schaduw en besloten ruimtes was zelf een vorm van architectuur: een beleving die verder ging dan stenen muren.",
-        "tip": "Onderdeel van de algemene Alhambra-route met het juiste ticket. Reken tijd voor de tuinen en de langere wandeling."
-      },
-      {
-        "name": "Campo del Príncipe",
-        "lat": 37.17302,
-        "lng": -3.59208,
-        "kicker": "Terug naar de stad van gewone mensen",
-        "story": "De afdaling naar Realejo is een overgang van koninklijke grandeur naar een woonwijk met kleine straten en pleinen. Realejo staat bekend als de voormalige Joodse wijk van Granada, al veranderde de bevolking en bebouwing na de verovering sterk.\n\nCampo del Príncipe laat zien hoe het leven in de benedenstad doorging. Pleinen dienden als ontmoetingsruimte, markt, speelplek en decor voor religieuze tradities. Hun betekenis werd telkens opnieuw gevormd door de mensen die er woonden.\n\nNa de symmetrie van paleistuinen is dit een ander soort stedelijke schoonheid: niet ontworpen om een sultan of keizer te imponeren, maar gegroeid uit dagelijkse behoeften. Kijk naar de huizen, cafés en straten rondom het plein. Ook dit is Granada, en misschien wel het deel dat het meest op een normale stad lijkt.",
-        "tip": "De afdaling vanaf de Alhambra is lang. Gebruik vervoer als je deze combinatie te zwaar vindt."
-      },
-      {
-        "name": "Casa de los Tiros",
-        "lat": 37.17527,
-        "lng": -3.5962,
-        "kicker": "Een gevel als visitekaartje van de elite",
-        "story": "Dit historische stadspaleis heeft een stevige gevel, alsof het gebouw zich nog steeds moet verdedigen. Casa de los Tiros laat zien hoe de elites die na de verovering een belangrijke positie kregen zichzelf in steen presenteerden.\n\nHet huis verbindt twee kanten van Granada: de oude straatstructuur en de nieuwe machtsverhoudingen. Wat nu een museum of monument is, was ooit onderdeel van een echte woon- en machtsomgeving. Families wilden hun rijkdom tonen, maar ook hun plek in de stedelijke hiërarchie veiligstellen.\n\nDe wijk Realejo heeft meerdere identiteiten gekend en is nooit een onveranderlijke historische enclave geweest. Daarmee is dit een passend eindpunt voor je wandeling. Granada werd telkens opnieuw gebouwd, geïnterpreteerd en gebruikt. De beroemdste paleizen zijn slechts een van de vele hoofdstukken.",
-        "tip": "Eindpunt op korte loopafstand van Plaza Nueva en de centrale straten."
       }
     ]
   }

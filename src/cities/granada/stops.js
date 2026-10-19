@@ -123,25 +123,33 @@ window.GRANADA_ROUTES = [
   },
   {
     "id": "albaicin",
-    "label": "19 okt · Albaicín & Sacromonte",
-    "duration": "3–5 uur met heuvels en pauzes",
-    "intro": "Een aparte dag voor de Darro, de steile woonstraten van Albaicín en optioneel Sacromonte. Deze wandeling herhaalt geen Alhambra-stops.",
+    "label": "Vandaag 19 okt · Albaicín, koffie & Darro",
+    "duration": "Koffie + 2–3 uur wandelen en lezen; Sacromonte optioneel",
+    "intro": "Start bij BonneVie op Placeta de San Miguel Bajo voor goede koffie en eventueel ontbijt. Vanaf hier via de bovenwijk en San Nicolás naar de Darro, met Sacromonte als optionele omweg. Het Alhambra, de kathedraal en Plaza Nueva hebben jullie al bezocht en staan niet in deze route. Jullie appartement ligt in Albaicín: begin direct bij de eerste halte of sluit onderweg aan.",
     "stops": [
       {
-        "name": "Carrera del Darro",
-        "lat": 37.17806,
-        "lng": -3.59443,
-        "kicker": "Een rivier die de stad vormgaf",
-        "story": "Op weinig plekken in Granada lijkt de stad zo vanzelfsprekend oud. Toch is dit vooral een prachtig voorbeeld van hoe het landschap de architectuur heeft gedicteerd. De Darro sneed een smal dal uit tussen de Alhambra en Albaicín; de bewoners moesten daar omheen bouwen. Daardoor vind je hier bruggen, huizen die op elkaar lijken te leunen, en een weg die zich eerder voegt naar het water dan andersom.\n\nVerderop ligt een deel van de rivier onder de stad verborgen. Hier kun je nog zien waarom water zo belangrijk was voor transport, verdediging en de organisatie van buurten. Kijk niet alleen naar de Alhambra op de heuvel, maar naar de kleine overgangen over de Darro: de gewone stad had net zo veel verbindingen nodig als het paleis.\n\nJe wandelt nu letterlijk tussen twee hoofdstukken van Granada.",
-        "tip": "Loop rustig langs de smalle weg: voetgangers en soms voertuigen delen deze ruimte. De volgende haltes liggen dichtbij."
+        "name": "Koffie · BonneVie Specialty Coffee & Terrace",
+        "lat": 37.18205,
+        "lng": -3.5955,
+        "kicker": "Start met goede koffie in Albaicín",
+        "story": "Begin ontspannen aan de Placeta de San Miguel Bajo. Het plein met de kerk van San Miguel Bajo ligt midden in de oude woonwijk, tussen smalle steegjes, witgekalkte huizen en kleine terrassen. Dit is een prettig vertrekpunt om Albaicín te ontdekken zonder eerst naar het drukke stadscentrum af te dalen.\n\nBonneVie serveert specialty coffee en ontbijt. Bestel bijvoorbeeld een flat white of een café con leche en neem de tijd. Vanaf hier wandelen jullie eerst door de hoger gelegen straten naar de uitzichtpunten, daarna grotendeels naar beneden richting de Darro. Het Alhambra, de kathedraal en Plaza Nueva slaan we bewust over: die hebben jullie al gezien.",
+        "tip": "BonneVie Specialty Coffee & Terrace · Placeta de San Miguel Bajo 6. Gepubliceerde maandaguren: 08.30–16.00. De pin duidt het plein aan; volg voor de precieze ingang de wandelroute."
       },
       {
-        "name": "El Bañuelo",
-        "lat": 37.17845,
-        "lng": -3.59299,
-        "kicker": "De ingewikkelde techniek van een simpel bad",
-        "story": "Een paleis bewonderen is gemakkelijk, maar een stad begrijpen begint soms in een badhuis. El Bañuelo is een uitzonderlijk bewaard gebleven islamitisch bad. Zulke ruimtes waren belangrijk voor reiniging, contact en dagelijkse routines. Het is verleidelijk om ze als exotische luxe te zien; in werkelijkheid maakten ze onderdeel uit van een dicht georganiseerde stedelijke samenleving.\n\nWarmte, stoom en water moesten gecontroleerd worden. Dat vereiste brandstof, leidingen, personeel en onderhoud. Kleine openingen in de gewelven lieten licht binnen zonder de ruimte volledig open te maken. Zo is een gebouw dat nu prachtig oogt, oorspronkelijk vooral een ingenieuze oplossing voor een alledaagse behoefte.\n\nNa 1492 veranderden gebruik en waardering van vele islamitische gebouwen. Juist dat dit badhuis overleefde, maakt het bijzonder. Het vertelt een geschiedenis van gewone inwoners naast die van sultans.",
-        "tip": "De buitenstop is gratis; voor een interieurbezoek gelden de actuele toegangstijden en eventuele toegangsregels."
+        "name": "Plaza Larga",
+        "lat": 37.18265,
+        "lng": -3.59331,
+        "kicker": "De Albaicín als gewone woonwijk",
+        "story": "Na de spectaculaire mirador kom je op een plein dat veel minder plechtig is. Plaza Larga draait om winkels, buurtcontact en dagelijkse routines. De Albaicín was immers nooit alleen een verzameling mooie gevels voor bezoekers: het was en is een woonwijk.\n\nVlakbij zijn resten van historische toegangspoorten te zien, waaronder de Arco de las Pesas. Zo komen de oude verdedigingsstructuren samen met een plein waar de buurt leeft. Het is een mooi voorbeeld van continuïteit zonder stilstand. Families verhuisden, religieuze gemeenschappen veranderden en huizen kregen andere gebruikers; het plein bleef een praktische ontmoetingsplek.\n\nWanneer je hier een paar minuten blijft staan, zie je misschien meer van het hedendaagse Granada dan bij een van de beroemde monumenten. De stad die de Alhambra bewaart, moet tegelijkertijd gewoon boodschappen doen en naar school.",
+        "tip": "Goed punt om iets te drinken. Daarna voert de wandeling omlaag richting de voormalige stadspoort."
+      },
+      {
+        "name": "Mirador de San Nicolás",
+        "lat": 37.18115,
+        "lng": -3.59261,
+        "kicker": "Waar de stad naar haar vroegere machthebbers terugkijkt",
+        "story": "Dit is waarschijnlijk het beroemdste uitzicht van Granada: de Alhambra met daarachter de Sierra Nevada. Maar probeer het beeld niet als één ansichtkaart te zien. Herken eerst de verschillende onderdelen: de Alcazaba, de Nasridische paleizen, het paleis van Karel V en het groen richting de Generalife. Verschillende politieke en architectonische projecten staan naast elkaar.\n\nJe staat in de Albaicín, de woonwijk aan de andere kant van de Darro. De afstand tussen beide heuvels maakte toezicht, verdediging en communicatie belangrijk. Vanaf de Alhambra kon men de stad overzien, maar dit plein toont de omgekeerde blik.\n\nSommige van de mooiste plekken in Granada zijn juist openbaar en gratis. Hier kun je de stad als geheel begrijpen zonder ticket, wachtrij of museumtekst. Kijk vooral hoe de gebouwen de contouren van de berg volgen.",
+        "tip": "Vaak druk rond zonsondergang. Het uitzicht zelf is gratis. Laat de stippellijn niet als exacte klimroute gebruiken."
       },
       {
         "name": "Casa de Zafra",
@@ -150,14 +158,6 @@ window.GRANADA_ROUTES = [
         "kicker": "Waarom de mooiste kamer achter de muur ligt",
         "story": "In de Albaicín zie je vaak bijna gesloten buitenmuren. Dat betekent niet dat de huizen erachter sober zijn. Een traditionele woning kan zich volledig naar een privébinnenhof richten. Daar krijg je beschutting, rust en licht op een manier die in deze warme stad heel praktisch was. Casa de Zafra helpt je dit woonmodel te begrijpen.\n\nHet is een woning uit de laatmiddeleeuwse periode, later aangepast aan nieuwe bewoners en functies. Niet elk detail dat je tegenwoordig ziet is daarom precies zoals het was vóór de christelijke verovering. Dat is geen tekortkoming: huizen blijven veranderen zolang mensen erin leven.\n\nDenk ook aan de beroemde cármenes, huizen met ommuurde tuinen en boomgaarden. Het oude Granada toont zijn rijkdom niet altijd aan voorbijgangers. Soms zit die verborgen achter een poort waar je bijna aan voorbijloopt.",
         "tip": "Je hoeft niet naar binnen. Let bij het wandelen vooral op de kleine deuren, muren en de groene boomtoppen die erbovenuit komen."
-      },
-      {
-        "name": "Paseo de los Tristes",
-        "lat": 37.17886,
-        "lng": -3.58946,
-        "kicker": "Een plein genoemd naar rouw",
-        "story": "De bijnaam Paseo de los Tristes betekent de wandeling van de treurenden. Volgens de lokale overlevering liepen hier vroeger begrafenisstoeten richting de begraafplaats. Dat geeft een andere lading aan het uitzicht op de Alhambra, waar mensen nu koffie drinken en foto’s maken.\n\nDe vesting lijkt vanaf hier een wereld op zichzelf: massieve muren, torens en een steile beboste helling. Maar paleis en stad waren nooit volledig gescheiden. Arbeiders, handelaren, water en levensmiddelen moesten zich tussen beide werelden verplaatsen. Macht had ook een logistieke kant.\n\nKijk eens naar de hoogteverschillen. Wat je op het plein ervaart als een mooi panorama, was voor bewoners eeuwenlang de dagelijkse realiteit van de stad. De ligging bepaalde routes, verdedigbaarheid en sociale verhoudingen. Je ziet hier niet alleen geschiedenis: je voelt haar in het terrein.",
-        "tip": "Goed punt om uit te rusten vóór de klim via de Cuesta del Chapiz."
       },
       {
         "name": "Casa del Chapiz",
@@ -173,31 +173,31 @@ window.GRANADA_ROUTES = [
         "lng": -3.58486,
         "kicker": "Grotwoningen zijn echte huizen",
         "story": "Sacromonte is beroemd om flamenco en grotwoningen. Maar wie de wijk alleen als avondvoorstelling bekijkt, mist het wezenlijke. De grotwoningen ontstonden door de hellingen uit te graven en ruimtes te maken die relatief beschut zijn tegen zomerse hitte en winterkou. Ze waren niet uitsluitend curiositeiten, maar werkelijke woonomgevingen.\n\nDe wijk is nauw verbonden met de gitano-gemeenschappen van Granada en met de zambra, een lokale muziek- en danstraditie. Toerisme heeft veel zichtbaar gemaakt, maar ook een deel van de geschiedenis geromantiseerd. Kijk daarom naar de paden, muurtjes, de gewone huizen en de afstanden tot de benedenstad.\n\nHier komen sociale geschiedenis, landschap en cultuur samen. Je hoeft geen voorstelling te bezoeken om de betekenis van de plek te voelen; de inrichting van de wijk zelf vertelt al een groot verhaal.",
-        "tip": "Dit punt ligt op het Camino del Sacromonte zelf, niet bij de hoger gelegen grotten van het museum. Dit is een optionele heen-en-teruglus; sla hem over als de wandeling te lang wordt."
+        "tip": "Dit punt ligt op het Camino del Sacromonte zelf, niet bij de hoger gelegen grotten van het museum. Dit is een optionele heen-en-teruglus; sla hem over als de wandeling te lang wordt. Extra omweg; als je weinig zin hebt om te klimmen, sla deze halte over en loop naar Paseo de los Tristes."
       },
       {
-        "name": "Mirador de San Nicolás",
-        "lat": 37.18115,
-        "lng": -3.59261,
-        "kicker": "Waar de stad naar haar vroegere machthebbers terugkijkt",
-        "story": "Dit is waarschijnlijk het beroemdste uitzicht van Granada: de Alhambra met daarachter de Sierra Nevada. Maar probeer het beeld niet als één ansichtkaart te zien. Herken eerst de verschillende onderdelen: de Alcazaba, de Nasridische paleizen, het paleis van Karel V en het groen richting de Generalife. Verschillende politieke en architectonische projecten staan naast elkaar.\n\nJe staat in de Albaicín, de woonwijk aan de andere kant van de Darro. De afstand tussen beide heuvels maakte toezicht, verdediging en communicatie belangrijk. Vanaf de Alhambra kon men de stad overzien, maar dit plein toont de omgekeerde blik.\n\nSommige van de mooiste plekken in Granada zijn juist openbaar en gratis. Hier kun je de stad als geheel begrijpen zonder ticket, wachtrij of museumtekst. Kijk vooral hoe de gebouwen de contouren van de berg volgen.",
-        "tip": "Vaak druk rond zonsondergang. Het uitzicht zelf is gratis. Laat de stippellijn niet als exacte klimroute gebruiken."
+        "name": "Paseo de los Tristes",
+        "lat": 37.17886,
+        "lng": -3.58946,
+        "kicker": "Een plein genoemd naar rouw",
+        "story": "De bijnaam Paseo de los Tristes betekent de wandeling van de treurenden. Volgens de lokale overlevering liepen hier vroeger begrafenisstoeten richting de begraafplaats. Dat geeft een andere lading aan het uitzicht op de Alhambra, waar mensen nu koffie drinken en foto’s maken.\n\nDe vesting lijkt vanaf hier een wereld op zichzelf: massieve muren, torens en een steile beboste helling. Maar paleis en stad waren nooit volledig gescheiden. Arbeiders, handelaren, water en levensmiddelen moesten zich tussen beide werelden verplaatsen. Macht had ook een logistieke kant.\n\nKijk eens naar de hoogteverschillen. Wat je op het plein ervaart als een mooi panorama, was voor bewoners eeuwenlang de dagelijkse realiteit van de stad. De ligging bepaalde routes, verdedigbaarheid en sociale verhoudingen. Je ziet hier niet alleen geschiedenis: je voelt haar in het terrein.",
+        "tip": "Goed punt om uit te rusten vóór de klim via de Cuesta del Chapiz."
       },
       {
-        "name": "Plaza Larga",
-        "lat": 37.18265,
-        "lng": -3.59331,
-        "kicker": "De Albaicín als gewone woonwijk",
-        "story": "Na de spectaculaire mirador kom je op een plein dat veel minder plechtig is. Plaza Larga draait om winkels, buurtcontact en dagelijkse routines. De Albaicín was immers nooit alleen een verzameling mooie gevels voor bezoekers: het was en is een woonwijk.\n\nVlakbij zijn resten van historische toegangspoorten te zien, waaronder de Arco de las Pesas. Zo komen de oude verdedigingsstructuren samen met een plein waar de buurt leeft. Het is een mooi voorbeeld van continuïteit zonder stilstand. Families verhuisden, religieuze gemeenschappen veranderden en huizen kregen andere gebruikers; het plein bleef een praktische ontmoetingsplek.\n\nWanneer je hier een paar minuten blijft staan, zie je misschien meer van het hedendaagse Granada dan bij een van de beroemde monumenten. De stad die de Alhambra bewaart, moet tegelijkertijd gewoon boodschappen doen en naar school.",
-        "tip": "Goed punt om iets te drinken. Daarna voert de wandeling omlaag richting de voormalige stadspoort."
+        "name": "El Bañuelo",
+        "lat": 37.17845,
+        "lng": -3.59299,
+        "kicker": "De ingewikkelde techniek van een simpel bad",
+        "story": "Een paleis bewonderen is gemakkelijk, maar een stad begrijpen begint soms in een badhuis. El Bañuelo is een uitzonderlijk bewaard gebleven islamitisch bad. Zulke ruimtes waren belangrijk voor reiniging, contact en dagelijkse routines. Het is verleidelijk om ze als exotische luxe te zien; in werkelijkheid maakten ze onderdeel uit van een dicht georganiseerde stedelijke samenleving.\n\nWarmte, stoom en water moesten gecontroleerd worden. Dat vereiste brandstof, leidingen, personeel en onderhoud. Kleine openingen in de gewelven lieten licht binnen zonder de ruimte volledig open te maken. Zo is een gebouw dat nu prachtig oogt, oorspronkelijk vooral een ingenieuze oplossing voor een alledaagse behoefte.\n\nNa 1492 veranderden gebruik en waardering van vele islamitische gebouwen. Juist dat dit badhuis overleefde, maakt het bijzonder. Het vertelt een geschiedenis van gewone inwoners naast die van sultans.",
+        "tip": "De buitenstop is gratis; voor een interieurbezoek gelden de actuele toegangstijden en eventuele toegangsregels."
       },
       {
-        "name": "Puerta de Elvira",
-        "lat": 37.18215,
-        "lng": -3.59959,
-        "kicker": "Een poort waar geen muur meer omheen staat",
-        "story": "Puerta de Elvira hoorde bij het middeleeuwse verdedigingssysteem van Granada. Reizigers en kooplieden kwamen hier de stad binnen. Er werd bepaald wie kon passeren en hoe goederen zich naar de markten bewogen. Zo waren stadspoorten tegelijk militaire, economische en bestuurlijke plekken.\n\nTegenwoordig zie je een poort die grotendeels losstaat van de verdwenen stadsmuren. Dat maakt haar bijna raadselachtig: waarom staat zo'n groot bouwsel nu tussen moderne straten? De vraag zelf toont hoe steden veranderen. Wat ooit een essentiële grens was, werd later een verkeershindernis of een monument.\n\nJe hebt vandaag een rivierdal, badhuis, verborgen woningen, een woonwijk op een heuvel en een beroemd uitzicht gezien. Deze poort sluit de wandeling af met één gedachte: Granada is niet alleen wat er bewaard bleef, maar ook wat er onderweg verdween.",
-        "tip": "Eindpunt bij de benedenstad. Vanaf hier vind je cafés, bussen en de route terug naar het centrum."
+        "name": "Carrera del Darro",
+        "lat": 37.17806,
+        "lng": -3.59443,
+        "kicker": "Een rivier die de stad vormgaf",
+        "story": "Op weinig plekken in Granada lijkt de stad zo vanzelfsprekend oud. Toch is dit vooral een prachtig voorbeeld van hoe het landschap de architectuur heeft gedicteerd. De Darro sneed een smal dal uit tussen de Alhambra en Albaicín; de bewoners moesten daar omheen bouwen. Daardoor vind je hier bruggen, huizen die op elkaar lijken te leunen, en een weg die zich eerder voegt naar het water dan andersom.\n\nVerderop ligt een deel van de rivier onder de stad verborgen. Hier kun je nog zien waarom water zo belangrijk was voor transport, verdediging en de organisatie van buurten. Kijk niet alleen naar de Alhambra op de heuvel, maar naar de kleine overgangen over de Darro: de gewone stad had net zo veel verbindingen nodig als het paleis.\n\nJe wandelt nu letterlijk tussen twee hoofdstukken van Granada.",
+        "tip": "Loop rustig langs de smalle weg: voetgangers en soms voertuigen delen deze ruimte. De volgende haltes liggen dichtbij."
       }
     ]
   }

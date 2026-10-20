@@ -133,7 +133,7 @@ window.MALAGA_ROUTES = [
     "id": "haven",
     "label": "Do 22 okt · Markt, Pompidou & zee",
     "duration": "Vanaf ochtend · circa 3–5 uur inclusief museum en lunch",
-    "intro": "Ga vroeg naar Mercado de Atarazanas: die sluit om 14.00 uur. Daarna een stukje Soho voor street art, dan de haven. Centre Pompidou is de aanbevolen museumstop (60–90 minuten), maar optioneel. Eindig aan zee zonder tijdsdruk. Vrijdag is Caminito del Rey al een flinke wandeling.",
+    "intro": "Ga vroeg naar Mercado de Atarazanas: die sluit officieel om 15.00 uur (ga liefst vóór 13.00 uur). Daarna een stukje Soho voor street art, dan de haven. Centre Pompidou is de aanbevolen museumstop (60–90 minuten), maar optioneel. Eindig aan zee zonder tijdsdruk. Vrijdag is Caminito del Rey al een flinke wandeling.",
     "center": [
       36.7181,
       -4.419

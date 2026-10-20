@@ -128,5 +128,74 @@ window.MALAGA_ROUTES = [
         "tip": "Goed eindpunt voor een koffie of aperitief, zonder omweg naar het hotel."
       }
     ]
+  },
+  {
+    "id": "haven",
+    "label": "Do 22 okt · Markt, Pompidou & zee",
+    "duration": "Vanaf ochtend · circa 3–5 uur inclusief museum en lunch",
+    "intro": "Ga vroeg naar Mercado de Atarazanas: die sluit om 14.00 uur. Daarna een stukje Soho voor street art, dan de haven. Centre Pompidou is de aanbevolen museumstop (60–90 minuten), maar optioneel. Eindig aan zee zonder tijdsdruk. Vrijdag is Caminito del Rey al een flinke wandeling.",
+    "center": [
+      36.7181,
+      -4.419
+    ],
+    "zoom": 15,
+    "stops": [
+      {
+        "name": "Mercado Central de Atarazanas",
+        "lat": 36.71887,
+        "lng": -4.42463,
+        "kicker": "Waar scheepsbouwplaats en voedselmarkt samenkomen",
+        "story": "De naam Atarazanas verwijst naar de vroegere scheepswerven van islamitisch Málaga. Op deze plek lag ooit een veel groter complex dat verbonden was met de haven; één opvallende stenen toegangspoort bleef bewaard en kreeg een plaats in de huidige markthal. De negentiende-eeuwse ijzerconstructie en de reusachtige glas-in-loodramen tonen een andere tijd, waarin spoorwegen, handel en nieuwe bouwtechnieken de stad veranderden.\n\nBinnen liggen vis, groenten, olijven en regionale producten in lange rijen. Loop niet alleen naar de bekendste viskraam maar kijk hoe de markt georganiseerd is: welke producten horen echt bij deze kust en welke komen van veel verder? Dat maakt Atarazanas een plek waar de oude havenhandel vandaag nog voelbaar is. Voor een lichte lunch zijn er ook tapas en kleine hapjes.",
+        "tip": "Plan deze halte vóór 14.00 uur; de markt is in de regel maandag–zaterdag geopend en zondag gesloten. Ga bij voorkeur in de ochtend."
+      },
+      {
+        "name": "Soho · street art",
+        "lat": 36.71659,
+        "lng": -4.42253,
+        "kicker": "Een voormalige handelsbuurt wordt een kunstwijk",
+        "story": "Ten zuiden van Alameda Principal veranderde het voormalige handelsgebied in de loop van de twintigste eeuw. Toen activiteiten naar andere delen van de stad verhuisden, verloor een deel van de buurt zijn vroegere rol. Initiatieven van ondernemers, kunstenaars en bewoners maakten er later een plek voor galeries, muurschilderingen en creatieve bedrijven van.\n\nHet opvallendst is hoe straatkunst de wijk verandert zonder dat er dure monumenten nodig zijn. Een grote muurschildering kan een blinde gevel van betekenis voorzien. Tegelijk werpt dat vragen op: wie profiteert van zo'n culturele herontwikkeling, en wat gebeurt er met oude bewoners en bedrijven als de buurt populair wordt? Kijk onderweg naar de contrasten tussen magazijnarchitectuur, hotels en nieuwe muurschilderingen.",
+        "tip": "Korte optionele omweg. Bekijk onder andere de straten rond Calle Casas de Campos; het precieze aanbod aan kunst verandert."
+      },
+      {
+        "name": "Palmeral de las Sorpresas",
+        "lat": 36.71814,
+        "lng": -4.41662,
+        "kicker": "Een boulevard op een oude havenkade",
+        "story": "De lange, witte pergola en de palmen vormen een van de meest herkenbare moderne plekken van Málaga. Eeuwenlang was de kade vooral een gebied voor vracht en havenwerk, gescheiden van het gewone stadsleven. De herontwikkeling gaf bewoners en bezoekers een nieuwe route langs het water.\n\nLet op de schaal: de pergola verzacht de uitgestrekte havenruimte en geeft schaduw terwijl de stad aan de andere kant dichtbebouwd en historisch blijft. Waar de oude toegangspoorten van de stad veiligheid en controle symboliseerden, nodigt deze promenade uit om te blijven hangen. Zo vertelt een eenvoudige wandeling langs de zee iets over de verschuiving van handelshaven naar cultuur- en recreatiestad.",
+        "tip": "Neem een paar minuten voor het uitzicht op de kathedraal en de heuvels."
+      },
+      {
+        "name": "Centre Pompidou Málaga",
+        "lat": 36.71966,
+        "lng": -4.41223,
+        "kicker": "Een gekleurde kubus met ideeën over moderne kunst",
+        "story": "Boven het museum staat een glazen kubus in felle kleuren, terwijl een belangrijk deel van de tentoonstellingsruimte onder het plein ligt. Dit is de Spaanse vestiging van het Parijse Centre Pompidou en een opvallend voorbeeld van de wens van Málaga om zich ook internationaal als kunststad te profileren.\n\nIn oktober 2026 loopt de tentoonstelling ‘To Open Eyes’, die moderne en hedendaagse werken samenbrengt rond de manier waarop kunstenaars ons leren kijken. De namen lopen uiteen van Josef Albers en Paul Klee tot Louise Bourgeois en Marcel Duchamp. Na het Picasso Museum is dit een mooie manier om te zien hoe de kunst na en naast hem allerlei richtingen insloeg. Let op de variatie in materialen en de vragen die de kunstenaars stellen in plaats van alleen op herkenbare beroemde schilderijen.",
+        "tip": "Aanrader voor donderdag: 60–90 minuten. De huidige collectiepresentatie loopt tot januari 2027; controleer ticketprijzen en de laatste toegangstijd ter plekke."
+      },
+      {
+        "name": "Muelle Uno",
+        "lat": 36.71843,
+        "lng": -4.41299,
+        "kicker": "Een haven die opnieuw publiek domein werd",
+        "story": "Aan de kade zie je direct hoeveel Málaga de laatste decennia veranderd is. De werkhaven bestaat nog, maar een deel van de waterkant werd ingericht voor wandelen, eten en cultuur. Muelle Uno verbindt het Centre Pompidou met de oude havenmond en de vuurtoren.\n\nSta eens stil bij de schepen die je ziet: van commerciële scheepvaart tot jachten en toeristenboten. De zee heeft eeuwenlang goederen en mensen naar Málaga gebracht en daarmee ook wisselende talen en ideeën. Nu is de haven vaak het decor van een ontspannen middag. Dat is een ander gezicht van dezelfde economische geschiedenis. Het beste aan deze plek is misschien dat je niets hoeft te reserveren: kijk gewoon naar het water en de veranderende skyline.",
+        "tip": "Geschikte plek voor lunch of koffie na Pompidou."
+      },
+      {
+        "name": "La Farola · vuurtoren",
+        "lat": 36.71501,
+        "lng": -4.40935,
+        "kicker": "Een vrouwelijk genoemde vuurtoren",
+        "story": "De vuurtoren van Málaga heet La Farola, niet het gebruikelijke mannelijke 'el faro'. Ze werd in de vroege negentiende eeuw gebouwd, toen de haven steeds belangrijker werd voor internationale handelsroutes. De toren hielp schepen veilig naar de havenmond te navigeren.\n\nVanaf hier kijk je terug op een stad die in terrassen tegen de heuvels lijkt te liggen. De historische kern, de Alcazaba en Gibralfaro vormen een duidelijk herkenbare lijn. Aan de andere kant begint de open kust. De toren laat zien dat zichtbaarheid voor een havenstad niet alleen om prestige ging: zonder betrouwbare navigatie vormden rotsen, stormen en duisternis reële gevaren. Een mooi moment om de stad als zeestad te bekijken, niet alleen als verzameling monumenten.",
+        "tip": "Buitenstop. Ga niet uit van beklimming; de promenade eromheen is voldoende."
+      },
+      {
+        "name": "Playa de la Malagueta",
+        "lat": 36.71821,
+        "lng": -4.40662,
+        "kicker": "Van stedelijke kust naar strandcultuur",
+        "story": "Málaga heeft het bijzondere voordeel dat je vanuit het historische centrum te voet naar een breed stadsstrand kunt lopen. De Malagueta werd vooral in de moderne tijd een belangrijke recreatieplek. Daarvoor was deze kustzone nauwer verbonden met havenactiviteiten en stadsuitbreiding.\n\nVoor bewoners is het strand geen exotische excursie maar onderdeel van het dagelijks leven. Wandel langs de boulevard en kijk naar vissersboten, gezinnen en mensen die aan zee sporten. De bekende strandrestaurants heten chiringuitos; hier worden vaak sardines op spiesjes boven houtvuur geroosterd, de 'espetos'. Ze zijn een lokale klassieker. Het is een passende, ontspannen afsluiting vóór jullie actieve Caminito-del-Rey-dag.",
+        "tip": "Optionele verlenging van de havenroute; zwemmen hoeft niet. Kies liever voor rustig wandelen of iets drinken met uitzicht."
+      }
+    ]
   }
 ];

@@ -146,7 +146,7 @@ window.MALAGA_ROUTES = [
         "lng": -4.42463,
         "kicker": "Waar scheepsbouwplaats en voedselmarkt samenkomen",
         "story": "De naam Atarazanas verwijst naar de vroegere scheepswerven van islamitisch Málaga. Op deze plek lag ooit een veel groter complex dat verbonden was met de haven; één opvallende stenen toegangspoort bleef bewaard en kreeg een plaats in de huidige markthal. De negentiende-eeuwse ijzerconstructie en de reusachtige glas-in-loodramen tonen een andere tijd, waarin spoorwegen, handel en nieuwe bouwtechnieken de stad veranderden.\n\nBinnen liggen vis, groenten, olijven en regionale producten in lange rijen. Loop niet alleen naar de bekendste viskraam maar kijk hoe de markt georganiseerd is: welke producten horen echt bij deze kust en welke komen van veel verder? Dat maakt Atarazanas een plek waar de oude havenhandel vandaag nog voelbaar is. Voor een lichte lunch zijn er ook tapas en kleine hapjes.",
-        "tip": "Plan deze halte vóór 14.00 uur; de markt is in de regel maandag–zaterdag geopend en zondag gesloten. Ga bij voorkeur in de ochtend."
+        "tip": "Plan deze halte liefst vóór 13.00 uur; officieel open tot 15.00 uur, maar sommige kramen sluiten eerder; de markt is in de regel maandag–zaterdag geopend en zondag gesloten. Ga bij voorkeur in de ochtend."
       },
       {
         "name": "Soho · street art",
